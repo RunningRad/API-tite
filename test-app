@@ -44,7 +44,7 @@ def create_delivery(store_name, dropoff_name):
         "external_delivery_id": data['reference'],
         "pickup_address": data["store"]["address"],
         "pickup_business_name": data["store"]["provider_type"],
-        "pickup_phone_number": data["store"]["provider_type"],
+        "pickup_phone_number": data["store"]["phone"],
         "dropoff_address": data2["address"],
         "dropoff_business_name": data2["name"],
         "dropoff_phone_number": data2["phone"],
