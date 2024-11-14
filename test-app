@@ -1,11 +1,11 @@
-pip3 install pyjwt
-pip3 install requests
 
 from os import access
 import jwt.utils
 import time
 import math
 import requests
+import json
+
 def create_delivery
     accessKey = { 
         "developer_id" : "abfcc79b-0fb9-42e0-b616-494bc8e2ddaf",
@@ -31,13 +31,16 @@ def create_delivery
     headers = {"Accept-Encoding": "application/json",
                "Authorization": "Bearer " + token,
                "Content-Type": "application/json"}
-    
+
+    with open('stores/store1.json', 'r') as file:
+        # Load the JSON data into a Python dictionary
+        data = json.load(file)
+      
     request_body = { # Modify pickup and drop off addresses below
-        "external_delivery_id": "D-12347",
-        "pickup_address": "901 Market Street 6th Floor San Francisco, CA 94103",
-        "pickup_business_name": "Wells Fargo SF Downtown",
-        "pickup_phone_number": "+16505555555",
-        "pickup_instructions": "Enter gate code 1234 on the callbox.",
+        "external_delivery_id": data['reference'],
+        "pickup_address": data["store"]["address"],
+        "pickup_business_name": data["store"]["provider_type"],
+        "pickup_phone_number": data["store"]["provider_type"],
         "dropoff_address": "901 Market Street 6th Floor San Francisco, CA 94103",
         "dropoff_business_name": "Wells Fargo SF Downtown",
         "dropoff_phone_number": "+16505555555",
