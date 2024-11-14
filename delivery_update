@@ -1,6 +1,3 @@
-pip3 install pyjwt
-pip3 install requests
-
 from os import access
 import jwt.utils
 import time
