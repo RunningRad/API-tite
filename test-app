@@ -6,7 +6,7 @@ import math
 import requests
 import json
 
-def create_delivery
+def create_delivery(store_name):
     accessKey = { 
         "developer_id" : "abfcc79b-0fb9-42e0-b616-494bc8e2ddaf",
         "key_id" : "e170c797-b01e-4ec1-bfc7-54343dd2cc6c",
@@ -32,7 +32,7 @@ def create_delivery
                "Authorization": "Bearer " + token,
                "Content-Type": "application/json"}
 
-    with open('stores/store1.json', 'r') as file:
+    with open(store_name, 'r') as file:
         # Load the JSON data into a Python dictionary
         data = json.load(file)
       
