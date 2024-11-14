@@ -1,3 +1,11 @@
+pip3 install pyjwt
+pip3 install requests
+
+from os import access
+import jwt.utils
+import time
+import math
+import requests
 
 get_delivery = requests.get(endpoint + 'D-12346', headers=headers) # Create GET request
 
