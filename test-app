@@ -6,7 +6,7 @@ import math
 import requests
 import json
 
-def create_delivery(store_name):
+def create_delivery(store_name, dropoff_name):
     accessKey = { 
         "developer_id" : "abfcc79b-0fb9-42e0-b616-494bc8e2ddaf",
         "key_id" : "e170c797-b01e-4ec1-bfc7-54343dd2cc6c",
@@ -35,17 +35,21 @@ def create_delivery(store_name):
     with open(store_name, 'r') as file:
         # Load the JSON data into a Python dictionary
         data = json.load(file)
+
+    with open(dropoff_name, 'r') as file:
+            # Load the JSON data into a Python dictionary
+            data2 = json.load(file)
       
     request_body = { # Modify pickup and drop off addresses below
         "external_delivery_id": data['reference'],
         "pickup_address": data["store"]["address"],
         "pickup_business_name": data["store"]["provider_type"],
         "pickup_phone_number": data["store"]["provider_type"],
-        "dropoff_address": "901 Market Street 6th Floor San Francisco, CA 94103",
-        "dropoff_business_name": "Wells Fargo SF Downtown",
-        "dropoff_phone_number": "+16505555555",
-        "dropoff_instructions": "Enter gate code 1234 on the callbox.",
-        "order_value": 1999
+        "dropoff_address": data2["address"],
+        "dropoff_business_name": data2["name"],
+        "dropoff_phone_number": data2["phone"],
+        "dropoff_instructions": data2["instructions"],
+        "order_value": data2["value"]
     }
     
     create_delivery = requests.post(endpoint, headers=headers, json=request_body) # Create POST request
