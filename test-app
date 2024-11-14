@@ -53,9 +53,3 @@ create_delivery = requests.post(endpoint, headers=headers, json=request_body) # 
 print(create_delivery.status_code)
 print(create_delivery.text)
 print(create_delivery.reason)
-
-get_delivery = requests.get(endpoint + 'D-12346', headers=headers) # Create GET request
-
-print(get_delivery.status_code)
-print(get_delivery.text)
-print(get_delivery.url)
