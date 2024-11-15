@@ -17,7 +17,7 @@ def list_store_files():
 
 def chat_with_gpt(prompt):
     """Sends a prompt to the ChatGPT API and returns the response."""
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
@@ -31,6 +31,7 @@ def getStoreRecommendations(prompt):
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
+            # Edit to get a list of stores based off of what food the customer wants, and the type of food that the stores have.
             {"role": "system", "content": "You are a helpful assistant. Give a list of the stores that contain food closest to what the user wants."},
             {"role": "user", "content": prompt}
         ]   
@@ -78,6 +79,7 @@ def main():
     menu_prompt += "\nPlease specify what you'd like to order (e.g., 'I want a Burrito Scram-Bowl and Cherry bubly')."
     
     user_input = input("What would you like to order? ")
+    print(menu_prompt)
     # chat_response = chat_with_gpt(menu_prompt + "\n\nUser input: " + user_input)
     
     # print("\nBased on your input, your order is:")
