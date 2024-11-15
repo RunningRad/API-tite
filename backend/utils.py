@@ -1,6 +1,5 @@
 from openai import OpenAI
 
-
 client = OpenAI()
 
 def get_response(q):
