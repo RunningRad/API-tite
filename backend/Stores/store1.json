@@ -2,7 +2,9 @@
     "reference": "12345-test-id",
     "store": {
       "merchant_supplied_id": "abc12345",
-      "provider_type": "papa_pizza"
+      "provider_type": "papa_pizza",
+      "address" : "901 Market Street 6th Floor San Francisco, CA 94103",
+      "phone" : "+16505555555"
     },
     "open_hours": [
       {
