@@ -12,6 +12,5 @@ def get_response(q):
             {"role": "user", "content": q}
         ]   
     )
-    print(completion.__dict__)
+    return completion.choices[0].message.content
 
-get_response("Tell me a joke")

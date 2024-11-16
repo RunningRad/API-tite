@@ -1,12 +1,6 @@
 import { useState } from "react";
 
-interface Props {
-  items: string[];
-  heading: string;
-  onSelectItem: (item: string) => void;
-}
-
-function ListGroup({ items, heading, onSelectItem }: Props) {
+function ListGroup({ items, heading, onSelectItem }) {
   // empty items list check
   const message = items.length === 0 && <p>No options found</p>;
 
