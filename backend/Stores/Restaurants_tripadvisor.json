@@ -1,0 +1,2557 @@
+[{
+  "id": "2008505",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "Sherpa House Restaurant and Culture Center",
+  "locationString": "Golden, Colorado",
+  "description": "Discover the wonders of the Himalayas at Sherpa House Restaurant and Cultural Center in Golden, CO. Since 2009, my establishment has served as an exhibition of the vibrancy and depth of Sherpa culture. Anyone who appreciates food, people, art, and beauty is sure to find something to love here. You could enjoy delicious meals while also learning more about the Sherpas.Stunning Décor and Outdoor Spaces If you believe that a restaurant's atmosphere is just as important as its food, you'll love my place. Not only does it have an eye-catching interior design that realistically captures the nature of Sherpa living spaces, but it also has a lovely garden, cozy outdoor patios, and tranquil water features. Delightful Himalayan Cuisine At my restaurant, you can savor delicious and heart-healthy Himalayan cuisine at great prices. From entrées like chicken tikka masala and thukpa to desserts like mango kulfi and gulab jamun, my dishes are sure to take your taste buds on a journey.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/1c/cd/sherpa-house-golden-co.jpg",
+  "photoCount": 207,
+  "rankingPosition": 3,
+  "rating": 4.5,
+  "rawRanking": 4.323061943054199,
+  "phone": "+1 303-278-7939",
+  "address": "1518 Washington Ave, Golden, CO 80401-1920",
+  "addressObj": {
+    "street1": "1518 Washington Ave",
+    "street2": "",
+    "city": "Golden",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80401-1920"
+  },
+  "localName": "Sherpa House Restaurant and Culture Center",
+  "localAddress": "1518 Washington Ave, 80401-1920",
+  "localLangCode": "en-US",
+  "email": "lhakpa@sherpaplaza.com",
+  "latitude": 39.75224,
+  "longitude": -105.21879,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33447-d2008505-Reviews-Sherpa_House_Restaurant_and_Culture_Center-Golden_Colorado.html",
+  "website": "http://sherpa.house/",
+  "rankingString": "#3 of 126 Restaurants in Golden",
+  "rankingDenominator": "126",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33447",
+      "name": "Golden",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 12,
+    "count2": 12,
+    "count3": 46,
+    "count4": 144,
+    "count5": 305
+  },
+  "numberOfReviews": 519,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Chow Mein",
+    "Dumplings",
+    "Tandoori Chicken",
+    "Chili",
+    "Curry",
+    "Tikka Masala",
+    "Rice pudding",
+    "Beef",
+    "Lamb",
+    "Chicken dishes",
+    "Naan Bread",
+    "Samosas",
+    "Soup",
+    "Naan",
+    "Garlic Naan",
+    "Chai",
+    "Lentil Soup"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 870,
+          "closeHours": "14:30"
+        },
+        {
+          "open": 1020,
+          "openHours": "17:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 870,
+          "closeHours": "14:30"
+        },
+        {
+          "open": 1020,
+          "openHours": "17:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 870,
+          "closeHours": "14:30"
+        },
+        {
+          "open": 1020,
+          "openHours": "17:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 870,
+          "closeHours": "14:30"
+        },
+        {
+          "open": 1020,
+          "openHours": "17:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 870,
+          "closeHours": "14:30"
+        },
+        {
+          "open": 1020,
+          "openHours": "17:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 870,
+          "closeHours": "14:30"
+        },
+        {
+          "open": 1020,
+          "openHours": "17:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 870,
+          "closeHours": "14:30"
+        },
+        {
+          "open": 1020,
+          "openHours": "17:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": null,
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "reviewTags": [
+    {
+      "text": "naan",
+      "reviews": 51
+    },
+    {
+      "text": "stew",
+      "reviews": 50
+    },
+    {
+      "text": "saag",
+      "reviews": 9
+    },
+    {
+      "text": "lamb",
+      "reviews": 24
+    },
+    {
+      "text": "chilli",
+      "reviews": 8
+    },
+    {
+      "text": "tibetan food",
+      "reviews": 6
+    },
+    {
+      "text": "outdoor patio",
+      "reviews": 15
+    },
+    {
+      "text": "yak",
+      "reviews": 84
+    },
+    {
+      "text": "sharma",
+      "reviews": 52
+    },
+    {
+      "text": "tribe",
+      "reviews": 15
+    },
+    {
+      "text": "colorado",
+      "reviews": 24
+    },
+    {
+      "text": "spinach",
+      "reviews": 8
+    }
+  ],
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/88/the-style.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/1c/cd/sherpa-house-golden-co.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/92/65/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/03/73/61/ef/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/d3/be/01/logo.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/95/23/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/1d/0d/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/1d/0b/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/1d/0a/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/1b/c7/all-living-being-be-blessed.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/1c/1b/c6/traditional-prayer-wheel.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/95/dd/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/95/d7/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/95/d1/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/95/cc/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/92/5f/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/92/4d/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/1c/92/46/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/e7/37/18/photo8jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/26/d6/e7/81/nepalese-beer-flight.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/26/d6/e7/58/dining-on-their-outside.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/cc/28/69/inside-the-sherpa-house.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/5a/eb/19/sherpa-house-restaurant.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/47/ef/d7/sherpa-house-restaurant.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/6f/the-spicy-yak-stew.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/70/the-spicy-yak-stew-sign.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/71/the-outside.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/7e/the-buffet.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/83/the-naan-and-stew.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/86/the-decor.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/88/the-style.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/8a/on-the-way.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/8b/the-town.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/8c/the-sign.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5c/d9/93/the-vibe.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/1b/photo8jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/1a/photo7jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/19/photo6jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/18/photo5jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/17/photo4jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/16/photo3jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/15/photo2jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/14/photo1jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/be/13/photo0jpg.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "Indian",
+    "Tibetan",
+    "Nepali"
+  ],
+  "dietaryRestrictions": [
+    "Vegetarian friendly",
+    "Vegan options",
+    "Gluten free options"
+  ],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Takeout",
+    "Reservations",
+    "Buffet",
+    "Seating",
+    "Parking Available",
+    "Street Parking",
+    "Free off-street parking",
+    "Highchairs Available",
+    "Wheelchair Accessible",
+    "Serves Alcohol",
+    "Wine and Beer",
+    "American Express",
+    "Mastercard",
+    "Visa",
+    "Cash Only",
+    "Free Wifi",
+    "Discover",
+    "Accepts Credit Cards",
+    "Table Service"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner"
+  ],
+  "isClaimedIcon": true,
+  "isClaimedText": null,
+  "orderOnline": [],
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "burger",
+      "reviews": 29
+    },
+    {
+      "text": "fries",
+      "reviews": 15
+    },
+    {
+      "text": "fun place",
+      "reviews": 5
+    },
+    {
+      "text": "patio",
+      "reviews": 23
+    },
+    {
+      "text": "beer",
+      "reviews": 27
+    },
+    {
+      "text": "colorado",
+      "reviews": 13
+    }
+  ],
+  "id": "3320944",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "The Buffalo Rose",
+  "locationString": "Golden, Colorado",
+  "description": "Dining at The Buffalo Rose is more than a delightful culinary experience, it is also a trip back in time to the American West just as it was in the late 19th century. A visit to Golden simply isn’t complete without a stop in at The Pulse of Golden Since 1859. The menu concept is best described as regionally inspired American cuisine with a strong Latin influence presented with creative Western flare. Our beautiful collection of new and recently renovated historic buildings are located in the very heart of downtown Golden, directly beneath the “Howdy Folks – Welcome to Golden” sign, so we’re really easy to find. Come on in, grab bite, and feel the pulse of Golden, Colorado.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/87/ea/ed/the-bar-has-an-amazing.jpg",
+  "photoCount": 100,
+  "rankingPosition": 15,
+  "rating": 4,
+  "rawRanking": 3.4853200912475586,
+  "phone": "+1 720-638-5597",
+  "address": "1119 Washington Ave 12th St. & Washington Ave., Golden, CO 80401-1142",
+  "addressObj": {
+    "street1": "1119 Washington Ave",
+    "street2": "12th St. & Washington Ave.",
+    "city": "Golden",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80401-1142"
+  },
+  "localName": "The Buffalo Rose",
+  "localAddress": "1119 Washington Ave, 12th St. & Washington Ave., 80401-1142",
+  "localLangCode": "en-US",
+  "email": "information@buffalorose.net",
+  "latitude": 39.755672,
+  "longitude": -105.2214,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33447-d3320944-Reviews-The_Buffalo_Rose-Golden_Colorado.html",
+  "website": "http://www.buffalorosegolden.com",
+  "rankingString": "#15 of 126 Restaurants in Golden",
+  "rankingDenominator": "126",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33447",
+      "name": "Golden",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 16,
+    "count2": 24,
+    "count3": 37,
+    "count4": 87,
+    "count5": 81
+  },
+  "numberOfReviews": 245,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Sandwiches",
+    "Burger",
+    "Salad",
+    "Tacos",
+    "Wings",
+    "Nachos",
+    "Salmon",
+    "Sliders",
+    "Bison Burger",
+    "Fried"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 600,
+          "openHours": "10:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1440,
+          "closeHours": "00:00"
+        }
+      ],
+      [
+        {
+          "open": 600,
+          "openHours": "10:00",
+          "close": 1440,
+          "closeHours": "00:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": "https://buffalorosegolden.com/dining/",
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/1b/87/ea/ed/the-bar-has-an-amazing.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/dc/41/f1/the-view-from-the-patio.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/dc/41/f0/fresh-air-and-good-vibes.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/dc/41/ee/sunny-days-have-your.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/dc/41/ed/patio-perfection-our.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f4/c2/d0/letting-our-favorite.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/c4/de/photo3jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/c4/dd/photo2jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/c4/dc/photo1jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/23/c4/db/photo0jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9f/b2/b5/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9f/b2/b3/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9f/b2/b4/caption.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "Latin"
+  ],
+  "dietaryRestrictions": [
+    "Gluten free options"
+  ],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Takeout",
+    "Reservations",
+    "Outdoor Seating",
+    "Private Dining",
+    "Seating",
+    "Street Parking",
+    "Television",
+    "Highchairs Available",
+    "Wheelchair Accessible",
+    "Serves Alcohol",
+    "Full Bar",
+    "Wine and Beer",
+    "Free Wifi",
+    "Accepts Credit Cards",
+    "Table Service",
+    "Live Music",
+    "Non-smoking restaurants",
+    "Gift Cards Available"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner",
+    "Late Night",
+    "Drinks"
+  ],
+  "isClaimedIcon": true,
+  "isClaimedText": null,
+  "orderOnline": [
+    {
+      "providerType": "RESERVATION",
+      "canProvideTimeslots": true,
+      "buttonText": "Reserve",
+      "offerURL": "https://www.tripadvisor.com/Commerce?p=OpenTable&src=236948408&geo=3320944&from=Restaurant_Review&area=reservation_button&slot=1&matchID=1&oos=0&cnt=1&silo=45582&bucket=979641&nrank=1&crank=1&clt=R&ttype=Restaurant&tm=311807028&managed=false&capped=false&gosox=9DMvibDTWdNaFeGYL8QTakyv1LBYZaGpeB4MEHn-hv2mZBN376EHVCGusTIRxmJ8oQ22dO6JGmfZfms0qgpB4lKRGvo9uvehVwUTIkahi24&cs=15aae904c11b66db8bf44fed02117a69c_piL",
+      "logoUrl": "https://static.tacdn.com/img2/branding/hotels/OT_Logo_1000x232.png",
+      "provider": "OpenTable",
+      "providerId": "15910",
+      "providerDisplayName": "OpenTable",
+      "headerText": "Reserve a table"
+    }
+  ],
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "pancakes",
+      "reviews": 15
+    },
+    {
+      "text": "onion rings",
+      "reviews": 8
+    }
+  ],
+  "id": "1453774",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "Golden Burro Cafe & Lounge",
+  "locationString": "Leadville, Colorado",
+  "description": "Plant-based 1950's diner located on Harrison Avenue in downtown Leadville. Look for the Golden Burro neon marquis.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-o/07/94/ee/06/golden-burro-cafe-lounge.jpg",
+  "photoCount": 75,
+  "rankingPosition": 8,
+  "rating": 3.5,
+  "rawRanking": 3.2729415893554688,
+  "phone": "+1 719-293-2034",
+  "address": "710 Harrison Ave Between 7th and 8th, Leadville, CO 80461-3562",
+  "addressObj": {
+    "street1": "710 Harrison Ave",
+    "street2": "Between 7th and 8th",
+    "city": "Leadville",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80461-3562"
+  },
+  "localName": "Golden Burro Cafe & Lounge",
+  "localAddress": "710 Harrison Ave, Between 7th and 8th, 80461-3562",
+  "localLangCode": "en-US",
+  "email": "dan@goldenburropb.com",
+  "latitude": 39.250072,
+  "longitude": -106.29218,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33520-d1453774-Reviews-Golden_Burro_Cafe_Lounge-Leadville_Colorado.html",
+  "website": "http://www.goldenburro.com",
+  "rankingString": "#8 of 21 Restaurants in Leadville",
+  "rankingDenominator": "21",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33520",
+      "name": "Leadville",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 73,
+    "count2": 63,
+    "count3": 106,
+    "count4": 148,
+    "count5": 141
+  },
+  "numberOfReviews": 531,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Closed Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Sandwiches",
+    "Burrito",
+    "French Toast",
+    "Burger",
+    "Omelette",
+    "Salad",
+    "Pancakes",
+    "Chicken fried steak",
+    "Chili",
+    "Grilled cheese",
+    "Waffles",
+    "BLT",
+    "Breakfast Burrito",
+    "Toasts",
+    "Beef",
+    "Hamburgers",
+    "Cakes",
+    "Pork",
+    "Taco Salad",
+    "Soup",
+    "Onion Rings",
+    "Hash Browns",
+    "Sausage",
+    "Sausage Gravy",
+    "Fried",
+    "Pies",
+    "Mashed Potatoes",
+    "Cinnamon Rolls"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 390,
+          "openHours": "06:30",
+          "close": 900,
+          "closeHours": "15:00"
+        }
+      ],
+      [
+        {
+          "open": 390,
+          "openHours": "06:30",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 390,
+          "openHours": "06:30",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 390,
+          "openHours": "06:30",
+          "close": 900,
+          "closeHours": "15:00"
+        }
+      ],
+      [
+        {
+          "open": 390,
+          "openHours": "06:30",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 390,
+          "openHours": "06:30",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 390,
+          "openHours": "06:30",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": null,
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/65/2a/86/leadville-from-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/29/67/d3/outside-of-building.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/94/ee/06/golden-burro-cafe-lounge.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2d/96/c0/5a/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2d/96/c0/59/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2d/96/c0/58/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2d/96/c0/57/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2b/75/dd/0b/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/22/be/55/d3/golden-burro-cafe-lounge.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/d1/c4/6d/golden-burro-cafe-lounge.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/40/b6/13/sidewalk-seating-on-a.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/40/b5/f0/old-photos-line-the-wall.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/40/b5/11/the-cafe-s-dining-room.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/40/b4/99/a-look-at-some-of-the.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/40/b4/27/bar-with-view-toward.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/d2/c1/39/golden-burro-cafe-bar.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/d2/c1/11/golden-burro-cafe-street.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/76/fb/ce/golden-burro-cafe-lounge.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/3a/94/5c/photo1jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/3a/94/5b/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/18/aa/1c/08/golden-burro-cafe-lounge.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/34/0d/d1/golden-burro-cafe-lounge.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/12/2d/7b/photo0jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/40/b6/13/sidewalk-seating-on-a.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/40/b5/f0/old-photos-line-the-wall.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/40/b5/11/the-cafe-s-dining-room.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/40/b4/99/a-look-at-some-of-the.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/40/b4/27/bar-with-view-toward.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "American",
+    "Cafe"
+  ],
+  "dietaryRestrictions": [
+    "Vegetarian friendly"
+  ],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Takeout",
+    "Seating",
+    "Highchairs Available",
+    "Wheelchair Accessible",
+    "Serves Alcohol",
+    "Full Bar",
+    "Table Service",
+    "Gift Cards Available"
+  ],
+  "mealTypes": [
+    "Breakfast",
+    "Lunch",
+    "Brunch",
+    "Drinks"
+  ],
+  "isClaimedIcon": true,
+  "isClaimedText": null,
+  "orderOnline": [],
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "burger",
+      "reviews": 52
+    },
+    {
+      "text": "street tacos",
+      "reviews": 7
+    },
+    {
+      "text": "wings",
+      "reviews": 11
+    },
+    {
+      "text": "trout",
+      "reviews": 6
+    }
+  ],
+  "id": "384144",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Fast food"
+  ],
+  "name": "Old Capitol Grill & Smokehouse",
+  "locationString": "Golden, Colorado",
+  "description": "Our Place is Yours: Old Capitol Grill & Smokehouse has become one of Colorado’s favorite eateries for locals and visitors alike. The Capitol offers up a full menu of on-site smoked meats, classic American fare, featuring our housemade dishes with some unique twists, in an historic setting. We have brought back some of the grandeur of the building from its heyday as the capitol building of the Colorado Territory and in celebration of Colorado’s beauty. The colors, light fixtures and wall art are reflective of the mid-1800s period, when Colorado’s Territorial Legislature met within its walls.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-o/19/51/8d/49/history-cocktails-and.jpg",
+  "photoCount": 84,
+  "rankingPosition": 16,
+  "rating": 3.5,
+  "rawRanking": 3.474689483642578,
+  "phone": "+1 303-279-6390",
+  "address": "1122 Washington Ave, Golden, CO 80401-1143",
+  "addressObj": {
+    "street1": "1122 Washington Ave",
+    "street2": "",
+    "city": "Golden",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80401-1143"
+  },
+  "localName": "Old Capitol Grill & Smokehouse",
+  "localAddress": "1122 Washington Ave, 80401-1143",
+  "localLangCode": "en-US",
+  "email": "oldcapitolgrill@gmail.com",
+  "latitude": 39.755455,
+  "longitude": -105.22168,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33447-d384144-Reviews-Old_Capitol_Grill_Smokehouse-Golden_Colorado.html",
+  "website": "http://oldcapitolgrill-smokehouse.com/",
+  "rankingString": "#16 of 126 Restaurants in Golden",
+  "rankingDenominator": "126",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33447",
+      "name": "Golden",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 45,
+    "count2": 71,
+    "count3": 98,
+    "count4": 171,
+    "count5": 131
+  },
+  "numberOfReviews": 516,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Chowder",
+    "Cheeseburger",
+    "Filet Mignon",
+    "Fish & Chips",
+    "Burger",
+    "Meatloaf",
+    "Ribs",
+    "Fish Taco",
+    "Salad",
+    "Tacos",
+    "Wings",
+    "Clam Chowder",
+    "Chili",
+    "Fried pickles",
+    "Nachos",
+    "Turkey Sandwich",
+    "Pulled Pork Sandwich",
+    "BLT",
+    "Salmon",
+    "French Fries",
+    "Toasts",
+    "Beef",
+    "Hamburgers",
+    "Fish",
+    "Pork",
+    "Trout",
+    "Soup",
+    "Brussel Sprouts",
+    "Sliders",
+    "Chicken Salad",
+    "Baked Potato",
+    "Brisket",
+    "Bison Burger",
+    "Fried",
+    "Cornbread",
+    "Baked Beans",
+    "Brussels Sprouts"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": "https://oldcapitolgrill-smokehouse.com/menu",
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/51/8d/49/history-cocktails-and.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/e0/51/9f/check-out-our-delicious.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/51/8c/81/front-sign.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/51/8c/1f/our-house-burger-is-ready.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/19/51/8b/a8/bison-burger-and-sweet.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "American",
+    "Brew Pub",
+    "Bar",
+    "Barbecue"
+  ],
+  "dietaryRestrictions": [
+    "Vegetarian friendly",
+    "Gluten free options"
+  ],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Takeout",
+    "Outdoor Seating",
+    "Seating",
+    "Street Parking",
+    "Television",
+    "Highchairs Available",
+    "Wheelchair Accessible",
+    "Serves Alcohol",
+    "Full Bar",
+    "Wine and Beer",
+    "American Express",
+    "Mastercard",
+    "Visa",
+    "Free Wifi",
+    "Table Service"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner"
+  ],
+  "isClaimedIcon": true,
+  "isClaimedText": null,
+  "orderOnline": [],
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "hash browns",
+      "reviews": 16
+    },
+    {
+      "text": "fruit cup",
+      "reviews": 2
+    },
+    {
+      "text": "potatoes",
+      "reviews": 7
+    },
+    {
+      "text": "french toast",
+      "reviews": 3
+    },
+    {
+      "text": "great breakfast place",
+      "reviews": 5
+    },
+    {
+      "text": "green chili",
+      "reviews": 12
+    },
+    {
+      "text": "local place",
+      "reviews": 3
+    },
+    {
+      "text": "local favorite",
+      "reviews": 2
+    },
+    {
+      "text": "service was great",
+      "reviews": 5
+    },
+    {
+      "text": "dude",
+      "reviews": 9
+    },
+    {
+      "text": "downtown",
+      "reviews": 7
+    },
+    {
+      "text": "colorado",
+      "reviews": 5
+    }
+  ],
+  "id": "1892491",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "Golden Diner",
+  "locationString": "Golden, Colorado",
+  "description": "I tried this a few days ago but see no evidence yet that you found it. Trying again.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-o/0d/d2/5f/bb/round-up-with-hashbrowns.jpg",
+  "photoCount": 30,
+  "rankingPosition": 10,
+  "rating": 4,
+  "rawRanking": 3.737780809402466,
+  "phone": "+1 303-279-5959",
+  "address": "700 12th St, Golden, CO 80401-1231",
+  "addressObj": {
+    "street1": "700 12th St",
+    "street2": "",
+    "city": "Golden",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80401-1231"
+  },
+  "localName": "Golden Diner",
+  "localAddress": "700 12th St, 80401-1231",
+  "localLangCode": "en-US",
+  "email": null,
+  "latitude": 39.756058,
+  "longitude": -105.220535,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33447-d1892491-Reviews-Golden_Diner-Golden_Colorado.html",
+  "website": "http://www.thegoldendiner.com/",
+  "rankingString": "#10 of 126 Restaurants in Golden",
+  "rankingDenominator": "126",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33447",
+      "name": "Golden",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 6,
+    "count2": 11,
+    "count3": 20,
+    "count4": 68,
+    "count5": 96
+  },
+  "numberOfReviews": 201,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Closed Now",
+  "priceLevel": "$",
+  "dishes": [
+    "Burrito",
+    "Corned Beef",
+    "Burger",
+    "Omelette",
+    "Pancakes",
+    "Biscuits and gravy",
+    "Chili",
+    "Toasts",
+    "Pork",
+    "Scrambled Eggs",
+    "Hash Browns",
+    "Finger Food",
+    "Sausage",
+    "Fried",
+    "Hash"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 420,
+          "openHours": "07:00",
+          "close": 840,
+          "closeHours": "14:00"
+        }
+      ],
+      [
+        {
+          "open": 420,
+          "openHours": "07:00",
+          "close": 840,
+          "closeHours": "14:00"
+        }
+      ],
+      [
+        {
+          "open": 420,
+          "openHours": "07:00",
+          "close": 840,
+          "closeHours": "14:00"
+        }
+      ],
+      [
+        {
+          "open": 420,
+          "openHours": "07:00",
+          "close": 840,
+          "closeHours": "14:00"
+        }
+      ],
+      [
+        {
+          "open": 420,
+          "openHours": "07:00",
+          "close": 840,
+          "closeHours": "14:00"
+        }
+      ],
+      [
+        {
+          "open": 420,
+          "openHours": "07:00",
+          "close": 840,
+          "closeHours": "14:00"
+        }
+      ],
+      [
+        {
+          "open": 420,
+          "openHours": "07:00",
+          "close": 840,
+          "closeHours": "14:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": null,
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/1f/fd/86/golden-diner.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/80/17/2c/hospital-cafeteria-quality.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0d/d2/5f/bb/round-up-with-hashbrowns.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2a/96/82/5a/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/bb/f3/58/egg-sandwich-hashbrowns.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/0f/48/37/breakfast-at-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/0f/48/36/breakfast-at-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/0f/48/35/breakfast-at-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/0f/48/34/breakfast-at-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/0f/48/33/breakfast-at-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/0f/48/32/breakfast-at-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/8f/6f/e0/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1e/cf/25/20/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/79/7a/93/20171208-105216-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/43/68/e2/photo3jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/43/68/e1/photo2jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/43/68/e0/photo1jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/43/68/df/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/04/62/a9/entrance-to-excellent.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/04/62/a8/seating-area.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/04/62/a6/home-made-from-scratch.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1e/cf/25/20/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/0f/48/36/breakfast-at-the-golden.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/0f/48/37/breakfast-at-the-golden.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/0f/48/35/breakfast-at-the-golden.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/0f/48/34/breakfast-at-the-golden.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/0f/48/33/breakfast-at-the-golden.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/0f/48/32/breakfast-at-the-golden.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "American",
+    "Diner"
+  ],
+  "dietaryRestrictions": [
+    "Vegetarian friendly",
+    "Gluten free options"
+  ],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Takeout",
+    "Seating",
+    "Highchairs Available",
+    "Wheelchair Accessible",
+    "Table Service",
+    "Gift Cards Available"
+  ],
+  "mealTypes": [
+    "Breakfast",
+    "Lunch",
+    "Brunch"
+  ],
+  "isClaimedIcon": false,
+  "isClaimedText": null,
+  "orderOnline": [],
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "pizza",
+      "reviews": 868
+    },
+    {
+      "text": "beer cheese soup",
+      "reviews": 50
+    },
+    {
+      "text": "wings",
+      "reviews": 39
+    },
+    {
+      "text": "pie",
+      "reviews": 14
+    },
+    {
+      "text": "sandwiches",
+      "reviews": 33
+    },
+    {
+      "text": "fries",
+      "reviews": 16
+    },
+    {
+      "text": "salad bar",
+      "reviews": 248
+    },
+    {
+      "text": "all you can eat",
+      "reviews": 126
+    },
+    {
+      "text": "worth the wait",
+      "reviews": 39
+    },
+    {
+      "text": "fun place",
+      "reviews": 25
+    },
+    {
+      "text": "cold beer",
+      "reviews": 16
+    },
+    {
+      "text": "visiting golden",
+      "reviews": 18
+    },
+    {
+      "text": "buffet",
+      "reviews": 311
+    },
+    {
+      "text": "crust",
+      "reviews": 129
+    },
+    {
+      "text": "honey",
+      "reviews": 94
+    },
+    {
+      "text": "matt",
+      "reviews": 15
+    },
+    {
+      "text": "colorado",
+      "reviews": 54
+    },
+    {
+      "text": "downtown",
+      "reviews": 35
+    }
+  ],
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/4f/68/21/a-shot-of-the-porch.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/17/5b/f2/65/popper-pizza.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/17/5b/fa/a1/voted-best-wings-in-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/17/5b/f8/71/shramps.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/17/5b/f8/34/reuben-rolls.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/58/b4/7f/woody-s-wood-fired-pizza.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/58/b4/7a/woody-s-wood-fired-pizza.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/95/f4/ae/photo0jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/11/34/dd/the-all-you-can-eat-pizza.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/11/35/00/the-front-of-the-restaurant.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/11/35/03/waiting-to-be-seated.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/11/35/04/the-dining-room.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/11/35/1d/our-fun-family-dining.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/82/63/26/caption.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "American",
+    "Bar",
+    "Pizza",
+    "Pub"
+  ],
+  "dietaryRestrictions": [
+    "Vegetarian friendly",
+    "Vegan options",
+    "Gluten free options"
+  ],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Takeout",
+    "Outdoor Seating",
+    "Seating",
+    "Television",
+    "Highchairs Available",
+    "Wheelchair Accessible",
+    "Serves Alcohol",
+    "Full Bar",
+    "American Express",
+    "Mastercard",
+    "Visa",
+    "Discover",
+    "Accepts Credit Cards",
+    "Table Service",
+    "Gift Cards Available"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner",
+    "Late Night",
+    "Drinks"
+  ],
+  "isClaimedIcon": false,
+  "isClaimedText": null,
+  "orderOnline": [],
+  "id": "384138",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "Woody's Wood-Fired Pizza",
+  "locationString": "Golden, Colorado",
+  "description": "Woody's has been a staple in downtown Golden for nearly 29 years. We are known for your friendly service, fun atmosphere, and delicious (yet affordable) food. In 2022 we were voted best pizza, wings, and family restaurant in Golden as well as Yelp's TOP 100 PIZZERIAS in the US! Come see us for dine-in OR for our brand-new Take-out & Delivery kitchen!",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-o/0f/4f/68/21/a-shot-of-the-porch.jpg",
+  "photoCount": 240,
+  "rankingPosition": 2,
+  "rating": 4.5,
+  "rawRanking": 4.570749282836914,
+  "phone": "+1 303-277-0443",
+  "address": "1305 Washington Ave, Golden, CO 80401-1915",
+  "addressObj": {
+    "street1": "1305 Washington Ave",
+    "street2": "",
+    "city": "Golden",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80401-1915"
+  },
+  "localName": "Woody's Wood-Fired Pizza",
+  "localAddress": "1305 Washington Ave, 80401-1915",
+  "localLangCode": "en-US",
+  "email": "contact@woodysgolden.com",
+  "latitude": 39.754448,
+  "longitude": -105.220146,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33447-d384138-Reviews-Woody_s_Wood_Fired_Pizza-Golden_Colorado.html",
+  "website": "https://www.facebook.com/woodysgolden/",
+  "rankingString": "#2 of 154 places to eat in Golden",
+  "rankingDenominator": "120",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33447",
+      "name": "Golden",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 12,
+    "count2": 11,
+    "count3": 87,
+    "count4": 361,
+    "count5": 862
+  },
+  "numberOfReviews": 1333,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Sandwiches",
+    "Pasta",
+    "Burger",
+    "Salad",
+    "Wings",
+    "Mac and cheese",
+    "Pesto",
+    "Fish",
+    "Pepperoni",
+    "Wood Fired Pizza",
+    "Soup",
+    "Bloody Mary",
+    "Sausage",
+    "Fried"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": "http://www.woodysgolden.com/menu",
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "steak",
+      "reviews": 9
+    }
+  ],
+  "id": "380337",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "Golden Corral",
+  "locationString": "Colorado Springs, El Paso County, Colorado",
+  "description": null,
+  "image": "https://media-cdn.tripadvisor.com/media/photo-o/0e/61/eb/c8/golden-corral.jpg",
+  "photoCount": 10,
+  "rankingPosition": 85,
+  "rating": 3.5,
+  "rawRanking": 3.15354061126709,
+  "phone": "+1 719-591-9870",
+  "address": "1970 Waynoka Rd, Colorado Springs, CO 80915-1624",
+  "addressObj": {
+    "street1": "1970 Waynoka Rd",
+    "street2": "",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80915-1624"
+  },
+  "localName": "Golden Corral",
+  "localAddress": "1970 Waynoka Rd, 80915-1624",
+  "localLangCode": "en-US",
+  "email": null,
+  "latitude": 38.85926,
+  "longitude": -104.719315,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33364-d380337-Reviews-Golden_Corral-Colorado_Springs_El_Paso_County_Colorado.html",
+  "website": "http://goldencorral.com",
+  "rankingString": "#85 of 186 Quick Bites in Colorado Springs",
+  "rankingDenominator": "186",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33364",
+      "name": "Colorado Springs",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "2397909",
+      "name": "El Paso County",
+      "abbreviation": null,
+      "subcategory": "County"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 5,
+    "count2": 5,
+    "count3": 17,
+    "count4": 25,
+    "count5": 10
+  },
+  "numberOfReviews": 62,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Salad"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1380,
+          "closeHours": "23:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": null,
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/61/eb/ec/fried-fish-and-corn-bread.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/61/eb/c8/golden-corral.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1a/0b/91/ec/our-view-of-the-food.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/9f/5b/a7/golden-corral.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/9f/5b/15/golden-corral.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/61/ec/36/mint-chocolate-chip-and.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/0b/91/ec/our-view-of-the-food.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "American"
+  ],
+  "dietaryRestrictions": [],
+  "establishmentTypes": [
+    "Quick Bites"
+  ],
+  "features": [
+    "Takeout",
+    "Seating",
+    "Highchairs Available",
+    "Wheelchair Accessible"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner",
+    "Brunch"
+  ],
+  "isClaimedIcon": true,
+  "isClaimedText": null,
+  "orderOnline": [
+    {
+      "providerType": "DELIVERY",
+      "canProvideTimeslots": false,
+      "buttonText": "Order online",
+      "offerURL": "https://www.tripadvisor.com/Commerce?p=Grubhub&src=253840176&geo=380337&from=Restaurant_Review&area=reservation_button&slot=1&matchID=1&oos=0&cnt=1&silo=25768&bucket=852508&nrank=1&crank=1&clt=R&ttype=Restaurant&tm=311807030&managed=false&capped=false&gosox=I-ADlg7wY8lqEq92hGOCPH9yxKao4fnJtoYdd5TLctoCVK2EaqcCi9rOMrUCyEbyqx5iVgEa-qMteDSJHD-QY68XPMV-Lvb0fDMxOE2ITOI&cs=1d7a1c10a2089d69f0f897624eecadd6f_BSi",
+      "logoUrl": "https://static.tacdn.com/img2/branding/hotels/grubhub_05.11.2022.png",
+      "provider": "Grubhub",
+      "providerId": "13712",
+      "providerDisplayName": "Grubhub",
+      "headerText": "Get food delivered"
+    }
+  ],
+  "input": "golden, colorado"
+},
+{
+  "id": "4711261",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [],
+  "name": "Golden Sweets",
+  "locationString": "Golden, Colorado",
+  "description": "Your hometown ice cream & chocolate shop featuring all natural ice cream made weekly, classic candies and wonderful artisan chocolates.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-o/08/89/8e/27/golden-sweets.jpg",
+  "photoCount": 8,
+  "rankingPosition": 1,
+  "rating": 4.5,
+  "rawRanking": 3.756460666656494,
+  "phone": "+1 303-271-1191",
+  "address": "1299 Washington Ave Suite 100, Golden, CO 80401-1233",
+  "addressObj": {
+    "street1": "1299 Washington Ave",
+    "street2": "Suite 100",
+    "city": "Golden",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80401-1233"
+  },
+  "localName": "Golden Sweets",
+  "localAddress": "1299 Washington Ave, Suite 100, 80401-1233",
+  "localLangCode": "en-US",
+  "email": "goldensweetshop@gmail.com",
+  "latitude": 39.75504,
+  "longitude": -105.220825,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33447-d4711261-Reviews-Golden_Sweets-Golden_Colorado.html",
+  "website": "http://www.golden-sweets.com",
+  "rankingString": "#1 of 3 Desserts in Golden",
+  "rankingDenominator": "3",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33447",
+      "name": "Golden",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 0,
+    "count2": 3,
+    "count3": 2,
+    "count4": 38,
+    "count5": 64
+  },
+  "numberOfReviews": 107,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$",
+  "dishes": [
+    "Ice Cream",
+    "Truffle"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1320,
+          "closeHours": "22:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": null,
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "reviewTags": [
+    {
+      "text": "ice cream",
+      "reviews": 67
+    },
+    {
+      "text": "waffle cone",
+      "reviews": 4
+    },
+    {
+      "text": "truffle",
+      "reviews": 5
+    },
+    {
+      "text": "double scoop",
+      "reviews": 3
+    },
+    {
+      "text": "downtown",
+      "reviews": 10
+    },
+    {
+      "text": "yum",
+      "reviews": 6
+    },
+    {
+      "text": "raspberry",
+      "reviews": 2
+    },
+    {
+      "text": "delish",
+      "reviews": 2
+    }
+  ],
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/89/8e/27/golden-sweets.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/33/23/f3/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/a0/dc/7a/golden-sweets.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/17/fd/be/d6/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/15/38/90/5c/yummy-flavors.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/8c/48/5c/the-serving-area-of-this.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/3c/bb/9c/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/a4/5f/c9/golden-sweets.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/fd/be/d6/photo0jpg.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "American"
+  ],
+  "dietaryRestrictions": [],
+  "establishmentTypes": [
+    "Dessert"
+  ],
+  "features": [
+    "Takeout",
+    "Outdoor Seating",
+    "Street Parking",
+    "Wheelchair Accessible"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner"
+  ],
+  "isClaimedIcon": true,
+  "isClaimedText": null,
+  "orderOnline": [],
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "falafel",
+      "reviews": 27
+    },
+    {
+      "text": "rice",
+      "reviews": 25
+    },
+    {
+      "text": "kafta",
+      "reviews": 7
+    },
+    {
+      "text": "salad",
+      "reviews": 26
+    },
+    {
+      "text": "lamb",
+      "reviews": 11
+    },
+    {
+      "text": "skewers",
+      "reviews": 3
+    },
+    {
+      "text": "bread",
+      "reviews": 3
+    },
+    {
+      "text": "strip mall",
+      "reviews": 19
+    },
+    {
+      "text": "middle eastern restaurant",
+      "reviews": 4
+    },
+    {
+      "text": "lebanese restaurant",
+      "reviews": 3
+    },
+    {
+      "text": "service was prompt",
+      "reviews": 5
+    },
+    {
+      "text": "great restaurant",
+      "reviews": 4
+    },
+    {
+      "text": "syrian",
+      "reviews": 8
+    },
+    {
+      "text": "lebanon",
+      "reviews": 3
+    },
+    {
+      "text": "colorado",
+      "reviews": 12
+    }
+  ],
+  "id": "384149",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "Ali Baba Grill",
+  "locationString": "Golden, Colorado",
+  "description": null,
+  "image": "https://media-cdn.tripadvisor.com/media/photo-s/03/24/0b/aa/hummus-be-schwarma.jpg",
+  "photoCount": 15,
+  "rankingPosition": 9,
+  "rating": 4.5,
+  "rawRanking": 3.7941670417785645,
+  "phone": "+1 303-279-2228",
+  "address": "109 N Rubey Dr Ste F, Golden, CO 80403-2457",
+  "addressObj": {
+    "street1": "109 N Rubey Dr Ste F",
+    "street2": "",
+    "city": "Golden",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80403-2457"
+  },
+  "localName": "Ali Baba Grill",
+  "localAddress": "109 N Rubey Dr Ste F, 80403-2457",
+  "localLangCode": "en-US",
+  "email": null,
+  "latitude": 39.766273,
+  "longitude": -105.23262,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33447-d384149-Reviews-Ali_Baba_Grill-Golden_Colorado.html",
+  "website": "http://alibabagrill.com/contact-us/",
+  "rankingString": "#9 of 154 places to eat in Golden",
+  "rankingDenominator": "120",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33447",
+      "name": "Golden",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 6,
+    "count2": 9,
+    "count3": 13,
+    "count4": 59,
+    "count5": 131
+  },
+  "numberOfReviews": 218,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Falafel",
+    "Gyros",
+    "Shawarma",
+    "Salad",
+    "Curry",
+    "Kabobs",
+    "Chicken Kabobs",
+    "Hummus",
+    "Baba Ghanoush",
+    "Beef",
+    "Lamb",
+    "Pitta",
+    "Soup",
+    "Baklava",
+    "Lamb Shank",
+    "Chai",
+    "Fried",
+    "Pita Bread",
+    "Pies"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ],
+      [
+        {
+          "open": 660,
+          "openHours": "11:00",
+          "close": 1260,
+          "closeHours": "21:00"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": null,
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/ac/fc/23/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/52/fe/3e/awesome-decor.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/03/24/0b/aa/hummus-be-schwarma.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/27/68/b9/41/lamb-kafta-kabob-18.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/27/68/b9/3f/baba-ghanoush-7.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/27/68/b9/3d/chicken-18.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/d6/77/68/20200208-170914-largejpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b3/e4/d2/photo0jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b3/e4/d3/photo1jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b3/e4/d4/photo2jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b3/e4/d5/photo3jpg.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "Lebanese",
+    "Mediterranean",
+    "Middle Eastern"
+  ],
+  "dietaryRestrictions": [
+    "Vegetarian friendly",
+    "Vegan options",
+    "Halal",
+    "Gluten free options"
+  ],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Takeout",
+    "Reservations",
+    "Seating",
+    "Parking Available",
+    "Highchairs Available",
+    "Wheelchair Accessible",
+    "Table Service"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner"
+  ],
+  "isClaimedIcon": false,
+  "isClaimedText": null,
+  "orderOnline": [
+    {
+      "providerType": "DELIVERY",
+      "canProvideTimeslots": false,
+      "buttonText": "Order online",
+      "offerURL": "https://www.tripadvisor.com/Commerce?p=Grubhub&src=123060463&geo=384149&from=Restaurant_Review&area=reservation_button&slot=1&matchID=1&oos=0&cnt=1&silo=25768&bucket=852508&nrank=1&crank=1&clt=R&ttype=Restaurant&tm=311807031&managed=false&capped=false&gosox=I-ADlg7wY8lqEq92hGOCPH9yxKao4fnJtoYdd5TLctoCVK2EaqcCi9rOMrUCyEbyDEmB-AKnotOfAe3ig0S8j_NBRj10NGUUfpB8GFX9QEM&cs=16c46564ad0c642fb8ebd24faa0f6b5bd_gE6",
+      "logoUrl": "https://static.tacdn.com/img2/branding/hotels/grubhub_05.11.2022.png",
+      "provider": "Grubhub",
+      "providerId": "13712",
+      "providerDisplayName": "Grubhub",
+      "headerText": "Get food delivered"
+    }
+  ],
+  "input": "golden, colorado"
+},
+{
+  "reviewTags": [
+    {
+      "text": "golden beets",
+      "reviews": 212
+    },
+    {
+      "text": "fish and chips",
+      "reviews": 131
+    },
+    {
+      "text": "burger",
+      "reviews": 31
+    },
+    {
+      "text": "english pub",
+      "reviews": 62
+    },
+    {
+      "text": "piano man",
+      "reviews": 14
+    },
+    {
+      "text": "broadmoor hotel",
+      "reviews": 29
+    },
+    {
+      "text": "sing alongs",
+      "reviews": 7
+    },
+    {
+      "text": "fun pub",
+      "reviews": 8
+    },
+    {
+      "text": "the wait staff",
+      "reviews": 13
+    },
+    {
+      "text": "sticker",
+      "reviews": 40
+    },
+    {
+      "text": "stung",
+      "reviews": 15
+    },
+    {
+      "text": "falls",
+      "reviews": 12
+    },
+    {
+      "text": "patrons",
+      "reviews": 11
+    }
+  ],
+  "id": "3387292",
+  "type": "RESTAURANT",
+  "category": "restaurant",
+  "subcategories": [
+    "Sit down"
+  ],
+  "name": "Golden Bee",
+  "locationString": "Colorado Springs, El Paso County, Colorado",
+  "description": "The Golden Bee is famous for its Gastropub food and yards of the finest ales from an extensive collection of English, Irish and local craft breweries. While our Fish & Chips have stood the test of time, the new menu embraces some Gastropub favorites. Guests are encouraged to participate in the cheerful atmosphere by joining the nightly ragtime piano beginning at 7:30 pm, and the sing-along beginning at 9:00 pm nightly, while proudly wearing their own ‘Bees’ that change seasonally.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/a3/91/5a/slow-roasted-beef-short.jpg",
+  "photoCount": 148,
+  "rankingPosition": 23,
+  "rating": 4,
+  "rawRanking": 4.1062092781066895,
+  "phone": "+1 866-381-8432",
+  "address": "1 Lake Ave Located on Lake Avenue and First Street across from Broadmoor Main., Colorado Springs, CO 80906-4269",
+  "addressObj": {
+    "street1": "1 Lake Ave",
+    "street2": "Located on Lake Avenue and First Street across from Broadmoor Main.",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "country": "United States",
+    "postalcode": "80906-4269"
+  },
+  "localName": "Golden Bee",
+  "localAddress": "1 Lake Ave, Located on Lake Avenue and First Street across from Broadmoor Main., 80906-4269",
+  "localLangCode": "en-US",
+  "email": null,
+  "latitude": 38.79193,
+  "longitude": -104.847694,
+  "webUrl": "https://www.tripadvisor.com/Restaurant_Review-g33364-d3387292-Reviews-Golden_Bee-Colorado_Springs_El_Paso_County_Colorado.html",
+  "website": "https://www.broadmoor.com/dining/golden-bee",
+  "rankingString": "#23 of 1,375 Restaurants in Colorado Springs",
+  "rankingDenominator": "1375",
+  "neighborhoodLocations": [],
+  "nearestMetroStations": [],
+  "ancestorLocations": [
+    {
+      "id": "33364",
+      "name": "Colorado Springs",
+      "abbreviation": null,
+      "subcategory": "City"
+    },
+    {
+      "id": "2397909",
+      "name": "El Paso County",
+      "abbreviation": null,
+      "subcategory": "County"
+    },
+    {
+      "id": "28927",
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "subcategory": "State"
+    },
+    {
+      "id": "191",
+      "name": "United States",
+      "abbreviation": null,
+      "subcategory": "Country"
+    }
+  ],
+  "ratingHistogram": {
+    "count1": 15,
+    "count2": 44,
+    "count3": 105,
+    "count4": 228,
+    "count5": 313
+  },
+  "numberOfReviews": 705,
+  "isClosed": false,
+  "isLongClosed": false,
+  "openNowText": "Open Now",
+  "priceLevel": "$$ - $$$",
+  "dishes": [
+    "Sandwiches",
+    "Bangers And Mash",
+    "Fish & Chips",
+    "Burger",
+    "Pretzel",
+    "Salad",
+    "Chili",
+    "Fried pickles",
+    "Salmon",
+    "Beef",
+    "Hamburgers",
+    "Lamb",
+    "Fish",
+    "Pork",
+    "Lamb Burger",
+    "Soup",
+    "Cottage Pie",
+    "Mushy Peas",
+    "Scotch Egg",
+    "Shepherd's Pie",
+    "Crackers",
+    "Fried"
+  ],
+  "hours": {
+    "weekRanges": [
+      [
+        {
+          "open": 690,
+          "openHours": "11:30",
+          "close": 1470,
+          "closeHours": "00:30"
+        }
+      ],
+      [
+        {
+          "open": 690,
+          "openHours": "11:30",
+          "close": 1470,
+          "closeHours": "00:30"
+        }
+      ],
+      [
+        {
+          "open": 690,
+          "openHours": "11:30",
+          "close": 1470,
+          "closeHours": "00:30"
+        }
+      ],
+      [
+        {
+          "open": 690,
+          "openHours": "11:30",
+          "close": 1470,
+          "closeHours": "00:30"
+        }
+      ],
+      [
+        {
+          "open": 690,
+          "openHours": "11:30",
+          "close": 1470,
+          "closeHours": "00:30"
+        }
+      ],
+      [
+        {
+          "open": 690,
+          "openHours": "11:30",
+          "close": 1530,
+          "closeHours": "01:30"
+        }
+      ],
+      [
+        {
+          "open": 690,
+          "openHours": "11:30",
+          "close": 1530,
+          "closeHours": "01:30"
+        }
+      ]
+    ],
+    "timezone": "America/Denver"
+  },
+  "menuWebUrl": "https://d1iwe50und7qx1.cloudfront.net/broadmoor.com-2121435814/cms/pressroom/golden_bee_menu_032524.pdf",
+  "ownersTopReasons": null,
+  "isNearbyResult": false,
+  "priceRange": null,
+  "photos": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/a3/91/5a/slow-roasted-beef-short.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/a3/99/88/tbt-circa-1960-s.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/a3/94/14/tickling-the-ivories.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/a3/94/04/delicious-sticky-toffee.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/a3/8f/8b/beer-steamed-mussels.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/a3/89/61/welcome-to-the-golden.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/a3/87/54/join-us-for-a-nightly.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/03/c8/15/2f/entry.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2d/56/af/c8/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2d/56/af/c7/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2a/80/1a/09/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2a/80/1a/08/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/68/16/98/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/68/16/97/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/68/16/96/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/68/16/95/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/28/68/16/94/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/27/00/5d/07/table-set.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/27/00/5c/f3/dining-area.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/27/00/5c/bb/2-yard-beer-and-pretzel.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/9c/f8/11/shot-of-the-bar-that.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/19/e4/a0/golden-bee.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0c/19/88/57/photo1jpg.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/68/16/98/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/68/16/97/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/68/16/96/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/68/16/95/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/68/16/94/caption.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/99/84/b1/hamburger-and-fries.jpg"
+  ],
+  "travelerChoiceAward": null,
+  "cuisines": [
+    "American",
+    "Bar",
+    "British",
+    "Pub",
+    "Gastropub"
+  ],
+  "dietaryRestrictions": [],
+  "establishmentTypes": [
+    "Restaurants"
+  ],
+  "features": [
+    "Reservations",
+    "Seating",
+    "Parking Available",
+    "Street Parking",
+    "Free off-street parking",
+    "Television",
+    "Wheelchair Accessible",
+    "Serves Alcohol",
+    "Full Bar",
+    "American Express",
+    "Mastercard",
+    "Visa",
+    "Free Wifi",
+    "Discover",
+    "Accepts Credit Cards",
+    "Table Service",
+    "Live Music"
+  ],
+  "mealTypes": [
+    "Lunch",
+    "Dinner",
+    "Late Night",
+    "Drinks"
+  ],
+  "isClaimedIcon": true,
+  "isClaimedText": null,
+  "orderOnline": [],
+  "input": "golden, colorado"
+}]
