@@ -74,13 +74,23 @@ def chat_with_gpt(prompt):
 def getStoreRecommendations(prompt, store_files):
     """Sends a prompt to the ChatGPT API and returns the stores that have the food closest to what the user wants"""
     final_prompt = prompt + """
-    . Please look for restaurants within this set of imported data: ```{store_files}```
+    . The user has requested this food as one they want to eat.
+
+    This consists of all of the possible restaurants they can order from, with each restaurant name being labeled as "name" alongside the address as "address" 
+    and all food items in "menu".
+
+    Use the provided food that the customer wants, and scan all of the menus. Make sure that a food item that either directly matches, or is mostly the same, is 
+    the food item the customer wants.
+    
+    Please give a list of possible restaurants that the user would want to eat from the restaurants provided.
+    Do NOT under any circumstances make up any new restaurants that do not exist within the file. Also please provide the address and full menu of the restaurant. 
     """
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             # Edit to get a list of stores based off of what food the customer wants, and the type of food that the stores have.
             {"role": "system", "content": "You are a helpful assistant. Give a list of the stores that contain food closest to what the user wants."},
+            {"role": "system", "content": "There is a list of restaurants provided in this string:  ```{store_files}```. Please use this to help determine the food the customer wants."},
             {"role": "user", "content": final_prompt}
         ]   
     )
@@ -90,6 +100,7 @@ def main():
     # Load available store files
     store_files, store_files_data = list_store_files()
 
+    print(store_files_data)
     # Lists all of the store choices in /Stores for now
     store_choices = "\n".join([f"{i+1}. {store_files[i]}" for i in range(len(store_files))])
     
