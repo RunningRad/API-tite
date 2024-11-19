@@ -20,11 +20,44 @@ def load_store_data(file_path):
         data = json.load(f)
     return data
 
+def parse_store_data(data):
+    # Takes the json data and parses out the resturant name, address, and menu
+    res = ''
+    if isinstance(data,list):
+        print('list')
+        res += '['                          # start resturant list
+        for resturant in data:
+            res += 'name:'
+            res += resturant['name']
+            res += ', address:'
+            res += resturant['address']
+            res += ', menu:['
+            for item in resturant['dishes']:
+                res += item + ', '
+            res = res[:-2]
+            res += ']; '                     # delimit resturants in list
+        
+        res += ']'                          # end resturant list
+    else: 
+        res += '['                          # start resturant list
+        res += 'name:'
+        res += data['store']['provider_type']
+        res += ', address:'
+        res += data['store']['address']
+        res += ', menu:['
+        for cat in data['menu']['categories']:
+            for item in cat['items']:
+                res += item['name'] + ', '
+        res = res[:-2]
+        res += ']]'                          # end resturant list
+    return res
+
 def list_store_files():
     """Lists available store JSON files in the current directory."""
     print(os.getcwd())
     path = os.getcwd() + "/Stores/"
-    return [f for f in os.listdir(path) if f.endswith('.json')], [load_store_string_data(f) for f in os.listdir(path) if f.endswith('.json')]
+    # return [f for f in os.listdir(path) if f.endswith('.json')], [load_store_string_data(f) for f in os.listdir(path) if f.endswith('.json')]
+    return [f for f in os.listdir(path) if f.endswith('.json')], [parse_store_data(load_store_data(f)) for f in os.listdir(path) if f.endswith('.json')]
     
 
 def chat_with_gpt(prompt):
