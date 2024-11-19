@@ -1,8 +1,10 @@
 # main.py
+from importlib.resources import path
 import json
 import os
 from openai import OpenAI
 client = OpenAI()
+pathFromCurrentWorkingDirectory = ""
 
 def parse_store_data(data):
     # Takes the json data and parses out the resturant name, address, and menu
@@ -37,7 +39,7 @@ def parse_store_data(data):
     return res
 
 def load_store_string_data(file_path):
-    path = os.getcwd() + "/backend/Stores/" + file_path
+    path = os.getcwd() + pathFromCurrentWorkingDirectory + file_path
     with open(path, 'r', encoding="utf8") as f:
         data = f.read()
         print(data)
@@ -45,13 +47,13 @@ def load_store_string_data(file_path):
 
 def load_store_data(file_path):
     """Loads store JSON data from a given file path."""
-    path = os.getcwd() + "/backend/Stores/" + file_path
+    path = os.getcwd() + pathFromCurrentWorkingDirectory + file_path
     with open(path, 'r') as f:
         data = json.load(f)
     return data
 def list_store_files():
     """Lists available store JSON files in the current directory."""
-    path = os.getcwd() + "/backend/Stores"
+    path = os.getcwd() + pathFromCurrentWorkingDirectory
     return [f for f in os.listdir(path) if f.endswith('.json')]
 
 def chat_with_gpt(prompt):
@@ -84,6 +86,10 @@ def getStoreRecommendations(food_item, restaurant_data):
 
 
 def main():
+    # I am in the working directory of API-tite, but you can change this to whatever you are in
+    global pathFromCurrentWorkingDirectory
+    pathFromCurrentWorkingDirectory = "/backend/Stores/"
+    
     # Load available store files
     store_files = list_store_files()
     
