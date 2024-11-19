@@ -91,11 +91,15 @@ def main():
     store_choices = "\n".join([f"{i+1}. {store_files[i]}" for i in range(len(store_files))])
     print(store_choices)
     
-    # Ask user to select a store
+    # Ask user to select a store file (choose 2 because this contains all the info)
     store_index = int(input(f"Please select a store (1-{len(store_files)}): ")) - 1
     selected_store_file = store_files[store_index]
+    
+    # Load and filter the store data
     store_data = load_store_data(selected_store_file)
     filtered_store_data = parse_store_data(store_data)
+    
+    # Prompt the user for what food type they are ordering and pass it into the chat function along with filtered store data
     foodType = input("Welcome to the ordering system! What type of food are you in the mood for? \n")
     store_choices = getStoreRecommendations(foodType, restaurant_data=filtered_store_data)
     print(store_choices)
