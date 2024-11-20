@@ -68,21 +68,47 @@ def chat_with_gpt(prompt):
     return response.choices[0].message['content']
 
 def getStoreRecommendations(food_item, restaurant_data):
-    '''This takes in a food item and filtered restaurant data (data must be filtered with parse_store_data()) and outputs a string
-    of listed stores and potential menu items that match the user input '''
+    '''
+    This takes in a food item and filtered restaurant data (data must be filtered with parse_store_data()) and outputs a dictionary
+    of listed stores and potential menu items that match the user input 
+    '''
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant that matches food items to restaurant menus."},
             {"role": "user", "content": f"Here is the restaurant data: {restaurant_data}. "
-             f"A user wants '{food_item}'. Find restaurants offering similar items and list them as:\n"
-             "1. {Restaurant Name (follows after \"name:\" in the string up until the \"address:\" field)}: {List of similar food items (follow after \"menu:[\" and are separated by commas until \"]\" is reached)}\n\n"
-             "2. Same thing as 1 but for a new restaurant if applicable"
-             "Keep listing off restaurants if they have some food items that correspond with the users request"
-             "If nothing is similar, return 'No available food items similar to {food_item}'."}
+             f"A user wants '{food_item}'. Find restaurants offering similar items and list them as a dictionary string with the key being the restaurant name and the value being a list of similar food items to '{food_item}'. This string must be able to be converted into a dictionary:\n"
+             "ie this format: \'{\"The Buffalo Rose\": [Sandwiches, Burger, Wings, Sliders, Bison Burger, Fried]} if the food_item variable is American food"
+             "This is where to find the aforementioned varibales as they are formatted in the restaurant_data variable: Restaurant name follows after \"name:\" in the string up until the \"address:\" field, List of food items follow after \"menu:[\" and are separated by commas until \"]\" is reached)\n\n"
+             "Keep adding value key pairs to the dictionary string separated by commas if restaurants have some food items that correspond with the users request"
+             f"If nothing is similar in all restaurant_data, return 'No available food items similar to '{food_item}'."}
         ]
     )
-    return response.choices[0].message.content
+    returnString = response.choices[0].message.content
+    # Tries to convert to a dictionary
+    try: 
+        return json.loads(returnString)
+    # If it doesn't: "No available food items similar to '{food_item}'." In this case a string will be returned that says what is in quotes. 
+    except:
+        return returnString
+    
+# # This function does not have functionality for returning a dictionary
+# def getStoreRecommendations(food_item, restaurant_data):
+#     '''This takes in a food item and filtered restaurant data (data must be filtered with parse_store_data()) and outputs a string
+#     of listed stores and potential menu items that match the user input '''
+#     response = client.chat.completions.create(
+#         model="gpt-3.5-turbo",
+#         messages=[
+#             {"role": "system", "content": "You are a helpful assistant that matches food items to restaurant menus."},
+#             {"role": "user", "content": f"Here is the restaurant data: {restaurant_data}. "
+#              f"A user wants '{food_item}'. Find restaurants offering similar items and list them as:\n"
+#              "1. {Restaurant Name (follows after \"name:\" in the string up until the \"address:\" field)}: {List of similar food items (follow after \"menu:[\" and are separated by commas until \"]\" is reached)}\n\n"
+#              "2. Same thing as 1 but for a new restaurant if applicable"
+#              "Keep listing off restaurants if they have some food items that correspond with the users request"
+#              "If nothing is similar, return 'No available food items similar to {food_item}'."}
+#         ]
+#     )
+#     return response.choices[0].message.content
 
 
 def main():
@@ -108,8 +134,8 @@ def main():
     # Prompt the user for what food type they are ordering and pass it into the chat function along with filtered store data
     foodType = input("Welcome to the ordering system! What type of food are you in the mood for? \n")
     store_choices = getStoreRecommendations(foodType, restaurant_data=filtered_store_data)
-    print(store_choices)
-    
+    print(f"The type of store choices is of {type(store_choices)}")
+    print(f"The store choices and respective dishes are: {store_choices}")
     
     # print(f"You've selected: {store_data['store']['provider_type']}")
     
