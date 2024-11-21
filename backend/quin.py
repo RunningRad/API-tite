@@ -47,7 +47,7 @@ def parse_ai_return(ai_data, store_data):
 
 
                 for return_item in return_resturant['items']:
-                    res[-1]['items'].add({'name': '', 'cot': 0})
+                    res[-1]['items'].add({'name': '', 'price': 0})
                     res[-1]['items']['name'] = return_item
                     i = 0
                     for item in resturant['dishes']:
