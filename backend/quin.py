@@ -1,5 +1,4 @@
 # main.py
-from importlib.resources import path
 import json
 import os
 from openai import OpenAI
