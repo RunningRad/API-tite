@@ -6,7 +6,7 @@ import ListGroup from './components/ListGroup';
 import CustomAccordion from './components/Accordion';
 
 
-const Chat = () => {
+const App = () => {
   const ts = new Date();
   const [chatGptMessage, setChatGptMessage] = useState({
     sender: "ChatGPT",
@@ -14,6 +14,11 @@ const Chat = () => {
     ts: `${ts.getHours()}:${ts.getMinutes()}`
   });
   const [newUserInput, setNewUserInput] = useState('');
+
+  const [stores, setStores] = useState([{
+    name: 'Options will appear here',
+    description: ['description']
+  }]) 
 
   const handleInputChange = (e) => {
     setNewUserInput(e.target.value);
@@ -26,12 +31,14 @@ const Chat = () => {
     try {
       // Send user's input to the backend API
       const response = await axios.get(`http://localhost:8000/ask?q=${encodeURIComponent(newUserInput)}`);
+      console.log(response)
       const ts = new Date();
       setChatGptMessage({
         sender: "ChatGPT",
         msg: response.data.text,
         ts: `${ts.getHours()}:${ts.getMinutes()}`
       });
+      setStores(response.data.store_options)
     } catch (error) {
       console.error("Error fetching response from API:", error);
     }
@@ -75,10 +82,9 @@ const Chat = () => {
         />
         <button className="msger-send-btn">Send</button>
       </form>     
-      <CustomAccordion></CustomAccordion>
-
+     <CustomAccordion storeData={stores} />
     </section>
   );
 };
 
-export default Chat;
+export default App;
