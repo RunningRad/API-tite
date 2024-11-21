@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from utils import get_response
 from fastapi.middleware.cors import CORSMiddleware
-import json
-import glob
+
 
 app = FastAPI()
 
@@ -19,23 +18,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-
-# Specify the folder path and file pattern
-files = glob.glob('backend/Stores/*.json')
-restaurants = []
-
-# Loop through all matching files
-for f in files:
-    with open(f, 'r') as json_file: 
-        restaurant = json.load(json_file)
-    restaurants.append(restaurant)
-
-
-
 @app.get("/ask")
 def read_item(q: str):
     print(f"received query with q: {q}")
+    stores = ["option1", "option2", "option3"]
     openai_response = get_response(q)
-    #return {"text": openai_response}
-    return 
+    return {"text": openai_response, "store_options": stores}

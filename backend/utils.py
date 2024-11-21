@@ -1,6 +1,9 @@
 from openai import OpenAI
+import json
+import glob
 
 client = OpenAI()
+
 
 def get_response(q):
 
