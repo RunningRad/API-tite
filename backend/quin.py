@@ -73,7 +73,7 @@ def getStoreRecommendations(food_item):
     '''
     # I am in the working directory of API-tite, but you can change this to whatever you are in
     global pathFromCurrentWorkingDirectory
-    pathFromCurrentWorkingDirectory = "/backend/Stores/"
+    pathFromCurrentWorkingDirectory = "/Stores/"
     store = "Restaurants_tripadvisor.json"
     
     # Load and filter the store data
@@ -86,10 +86,10 @@ def getStoreRecommendations(food_item):
         messages=[
             {"role": "system", "content": "You are a helpful assistant that matches food items to restaurant menus."},
             {"role": "user", "content": f"Here is the restaurant data: {filtered_store_data}. "
-             f"A user wants '{food_item}'. Find restaurants offering similar items and list them as a dictionary string with the key being the restaurant name and the value being a list of similar food items to '{food_item}'. This string must be able to be converted into a dictionary:\n"
-             "ie this format: \'{\"The Buffalo Rose\": [Sandwiches, Burger, Wings, Sliders, Bison Burger, Fried]} if the food_item variable is American food"
+             f"A user wants '{food_item}'. Find restaurants offering similar items and list them as a list of dictionary strings with two key value pairs. The first key being 'name' and value the restaurant name. The second key is 'items' and value being a list of all food items similar to '{food_item}' from that store. This string must be able to be converted into a dictionary:\n"
+             "ie this format: [{\"name\": The Buffalo Rose, \"items\": ['Sandwiches', 'Burger', 'Wings', 'Sliders', 'Bison Burger', 'Fried']}] if the food_item variable is American food"
              "This is where to find the aforementioned varibales as they are formatted in the restaurant_data variable: Restaurant name follows after \"name:\" in the string up until the \"address:\" field, List of food items follow after \"menu:[\" and are separated by commas until \"]\" is reached)\n\n"
-             "Keep adding value key pairs to the dictionary string separated by commas if restaurants have some food items that correspond with the users request"
+             "Please return as many store that you can find matching the users wants and return them as a list of dictionaries as described above, don't return any stores with empty item lists."
              f"If nothing is similar in all restaurant_data, return 'No available food items similar to '{food_item}'."}
         ]
     )

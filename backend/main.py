@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from utils import get_response
+from quin import getStoreRecommendations
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -21,6 +21,5 @@ app.add_middleware(
 @app.get("/ask")
 def read_item(q: str):
     print(f"received query with q: {q}")
-    stores = ["option1", "option2", "option3"]
-    openai_response = get_response(q)
-    return {"text": openai_response, "store_options": stores}
+    openai_response = getStoreRecommendations(q)
+    return {"text": "Here is what i could find for you", "store_options": openai_response}
