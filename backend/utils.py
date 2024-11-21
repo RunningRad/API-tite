@@ -15,4 +15,3 @@ def get_response(q):
         ]   
     )
     return completion.choices[0].message.content
-

@@ -41,10 +41,10 @@ def create_delivery(store_name, dropoff_name):
             data2 = json.load(file)
       
     request_body = { # Modify pickup and drop off addresses below
-        "external_delivery_id": data['reference'],
-        "pickup_address": data["store"]["address"],
-        "pickup_business_name": data["store"]["provider_type"],
-        "pickup_phone_number": data["store"]["phone"],
+        "external_delivery_id": data['id'],
+        "pickup_address": data["address"],
+        "pickup_business_name": data["name"],
+        "pickup_phone_number": data["phone"],
         "dropoff_address": data2["address"],
         "dropoff_business_name": data2["name"],
         "dropoff_phone_number": data2["phone"],
