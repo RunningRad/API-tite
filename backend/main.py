@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from quin import getStoreRecommendations
 from fastapi.middleware.cors import CORSMiddleware
-
+from test-app import create_delivery
+from delivery_update import get_update
 
 app = FastAPI()
 
@@ -23,3 +24,15 @@ def read_item(q: str):
     print(f"received query with q: {q}")
     openai_response = getStoreRecommendations(q)
     return {"text": "Here is what i could find for you", "store_options": openai_response}
+
+@app.get("/ask")
+def create(store, place):
+    print(f"received query with q: {q}")
+    openai_response = create_delivery(store, place)
+    return {"text": "Delivery created", "Delivery id": openai_response}
+
+@app.get("/ask")
+def update(q: str):
+    print(f"received query with q: {q}")
+    openai_response = get_update(q)
+    return {"text": "Here is what i could find for you", "the status is": openai_response}
