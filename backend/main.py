@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from utils import get_response
+from quin import getStoreRecommendations
 from fastapi.middleware.cors import CORSMiddleware
-import json
-import glob
+from test-app import create_delivery
+from delivery_update import get_update
 
 app = FastAPI()
 
@@ -19,23 +19,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-
-# Specify the folder path and file pattern
-files = glob.glob('backend/Stores/*.json')
-restaurants = []
-
-# Loop through all matching files
-for f in files:
-    with open(f, 'r') as json_file: 
-        restaurant = json.load(json_file)
-    restaurants.append(restaurant)
-
-
-
 @app.get("/ask")
 def read_item(q: str):
     print(f"received query with q: {q}")
-    openai_response = get_response(q)
-    #return {"text": openai_response}
-    return 
+    openai_response = getStoreRecommendations(q)
+    return {"text": "Here is what i could find for you", "store_options": openai_response}
+
+@app.get("/ask")
+def create(store, place):
+    print(f"received query with q: {q}")
+    openai_response = create_delivery(store, place)
+    return {"text": "Delivery created", "Delivery id": openai_response}
+
+@app.get("/ask")
+def update(q: str):
+    print(f"received query with q: {q}")
+    openai_response = get_update(q)
+    return {"text": "Here is what i could find for you", "the status is": openai_response}

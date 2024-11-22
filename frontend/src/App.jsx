@@ -1,52 +1,50 @@
 import React, { useState } from 'react';
 import './Chat.css';
 import ChatGPTImage from './images/chatgpt.svg';
-import UserImage from './images/user.svg'
 import axios from 'axios';
+import ListGroup from './components/ListGroup';
+import CustomAccordion from './components/Accordion';
 
 
-const Chat = () => {
+const App = () => {
   const ts = new Date();
-  const defaultMessages = [
-    {
-      sender: "ChatGPT",
-      msg: "Hi! How can I help you today?",
-      ts: `${ts.getHours()}:${ts.getMinutes()}`
-    },
+  const [chatGptMessage, setChatGptMessage] = useState({
+    sender: "ChatGPT",
+    msg: "Hi! What would you like to eat today?",
+    ts: `${ts.getHours()}:${ts.getMinutes()}`
+  });
+  const [newUserInput, setNewUserInput] = useState('');
 
-  ]
-  const [messages, setMessages] = useState(defaultMessages);
-  const [newMessage, setNewMessage] = useState('');
+  const [stores, setStores] = useState([{
+    name: 'Options will appear here',
+    description: ['description']
+  }]) 
 
   const handleInputChange = (e) => {
-    setNewMessage(e.target.value);
+    setNewUserInput(e.target.value);
   };
 
-  const handleSendMessage = (e) => {
+  const handleUserRequest = async (e) => {
     e.preventDefault();
-    if (newMessage.trim() === '') return;
-    let ts = new Date();
-    let newMessages = [...messages, {
-      sender: "Shahrukh",
-      msg: newMessage,
-      ts: `${ts.getHours()}:${ts.getMinutes()}`,
-    }]
-    setMessages(newMessages);
+    if (newUserInput.trim() === '') return;
 
-    axios.get(`http://localhost:8000/ask?q=${encodeURIComponent(newMessage)}`)
-      .then(function (response) {
-        ts = new Date();
-        setMessages([...newMessages, {
-          sender: "ChatGPT",
-          msg: response.data.text,
-          ts: `${ts.getHours()}:${ts.getMinutes()}`,
-        }])
-        setNewMessage("");
-      })
-      .catch(function (error) {
-        console.log(error);
+    try {
+      // Send user's input to the backend API
+      const response = await axios.get(`http://localhost:8000/ask?q=${encodeURIComponent(newUserInput)}`);
+      console.log(response)
+      const ts = new Date();
+      setChatGptMessage({
+        sender: "ChatGPT",
+        msg: response.data.text,
+        ts: `${ts.getHours()}:${ts.getMinutes()}`
       });
+      setStores(response.data.store_options)
+    } catch (error) {
+      console.error("Error fetching response from API:", error);
+    }
 
+    // Clear the input field
+    setNewUserInput('');
   };
 
   return (
@@ -59,38 +57,34 @@ const Chat = () => {
           <span><i className="fas fa-cog"></i></span>
         </div>
       </header>
-
-
-
-      <form className="msger-inputarea">
-        <input value={newMessage} onChange={e => setNewMessage(e.target.value)} type="text" className="msger-input" placeholder="Enter your message..." />
-        <button className="msger-send-btn" onClick={handleSendMessage}>Send</button>
-      </form>
-      
       <main className="msger-chat">
-      
-      {messages.map((item, index) => (
-        <div key={`message-${index}`} className={item.sender === "ChatGPT" ? "msg left-msg" : "msg right-msg"}>
+        <div className="msg left-msg">
           <div
             className="msg-img"
-            style={{ backgroundImage: `url(${item.sender === "ChatGPT" ? ChatGPTImage : UserImage})` }}></div>
-
+            style={{ backgroundImage: `url(${ChatGPTImage})` }}
+          ></div>
           <div className="msg-bubble">
             <div className="msg-info">
-              <div className="msg-info-name">{item.sender}</div>
-              <div className="msg-info-time">{item.ts}</div>
+              <div className="msg-info-name">ChatGPT</div>
+              <div className="msg-info-time">{chatGptMessage.ts}</div>
             </div>
-            <div className="msg-text">
-              {item.msg}
-            </div>
+            <div className="msg-text">{chatGptMessage.msg}</div>
           </div>
         </div>
-      ))}
-
-    </main>
+      </main>
+      <form className="msger-inputarea" onSubmit={handleUserRequest}>
+        <input
+          value={newUserInput}
+          onChange={handleInputChange}
+          type="text"
+          className="msger-input"
+          placeholder="Enter your message..."
+        />
+        <button className="msger-send-btn">Send</button>
+      </form>     
+     <CustomAccordion storeData={stores} />
     </section>
-    
   );
 };
 
-export default Chat;
+export default App;
