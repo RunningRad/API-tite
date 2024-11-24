@@ -1,0 +1,33 @@
+from os import access
+import jwt.utils
+import time
+import math
+import requests
+def get_update(delivery_id):
+           endpoint = "https://openapi.doordash.com/drive/v2/deliveries/"
+
+           accessKey = { 
+               "developer_id" : "abfcc79b-0fb9-42e0-b616-494bc8e2ddaf",
+               "key_id" : "e170c797-b01e-4ec1-bfc7-54343dd2cc6c",
+               "signing_secret" : "u74CvdVuaBAvdGNoNAKnXTLJO8umd6o0dPpifLFqaoA"
+           }
+           
+           token = jwt.encode(
+               {
+                   "aud": "doordash",
+                   "iss": accessKey["developer_id"],
+                   "kid": accessKey["key_id"],
+                   "exp": str(math.floor(time.time() + 300)),
+                   "iat": str(math.floor(time.time())),
+           },
+           jwt.utils.base64url_decode(accessKey["signing_secret"]),
+           algorithm="HS256",
+           headers={"dd-ver": "DD-JWT-V1"})
+
+           headers = {"Accept-Encoding": "application/json",
+                      "Authorization": "Bearer " + token,
+                      "Content-Type": "application/json"}
+           
+           get_delivery = requests.get(endpoint + delivery_id, headers=headers) # Create GET request
+           
+           return get_delivery['delivery_status']
