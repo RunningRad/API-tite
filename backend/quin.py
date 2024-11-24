@@ -36,6 +36,37 @@ def parse_store_data(data):
         res += ']]'                          # end resturant list
     return res
 
+def parse_ai_return(ai_data, store_data):
+    res = []
+
+    for return_resturant in ai_data:
+        res.add({'name':return_resturant['name'], 'items':[]})
+        for resturant in store_data:
+            if(resturant['name'] == return_resturant['name']):
+                # got the appropriate resturant
+
+
+                for return_item in return_resturant['items']:
+                    res[-1]['items'].add({'name': '', 'price': 0})
+                    res[-1]['items']['name'] = return_item
+                    i = 0
+                    for item in resturant['dishes']:
+                        i += 1
+                        if (item == return_item):
+                            # got the appropriate item
+
+
+                            j = 0
+                            for price in resturant['prices']:
+                                j += 1
+                                if(j == i):
+                                    # got the price
+                                    res[-1]['items']['price'] = price
+                                    break #for price
+                            break #for ite
+                break #for resturant
+    return res
+
 # def load_store_string_data(file_path):
 #     path = os.getcwd() + pathFromCurrentWorkingDirectory + file_path
 #     with open(path, 'r', encoding="utf8") as f:

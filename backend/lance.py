@@ -1,24 +1,10 @@
 # main.py
+from importlib.resources import path
 import json
 import os
 from openai import OpenAI
-import json
 client = OpenAI()
-
-def load_store_string_data(file_path):
-    path = os.getcwd() + "/Stores/" + file_path
-    with open(path, 'r', encoding="utf8") as f:
-        data = f.read()
-        print(data)
-    return data
-    
-def load_store_data(file_path):
-    """Loads store JSON data from a given file path."""
-    # For convience purposes, I have my path slightly changed.
-    path = os.getcwd() + "/Stores/" + file_path
-    with open(path, 'r', encoding="utf8") as f:
-        data = json.load(f)
-    return data
+pathFromCurrentWorkingDirectory = ""
 
 def parse_store_data(data):
     # Takes the json data and parses out the resturant name, address, and menu
@@ -52,13 +38,23 @@ def parse_store_data(data):
         res += ']]'                          # end resturant list
     return res
 
+def load_store_string_data(file_path):
+    path = os.getcwd() + pathFromCurrentWorkingDirectory + file_path
+    with open(path, 'r', encoding="utf8") as f:
+        data = f.read()
+        print(data)
+    return data
+
+def load_store_data(file_path):
+    """Loads store JSON data from a given file path."""
+    path = os.getcwd() + pathFromCurrentWorkingDirectory + file_path
+    with open(path, 'r') as f:
+        data = json.load(f)
+    return data
 def list_store_files():
     """Lists available store JSON files in the current directory."""
-    print(os.getcwd())
-    path = os.getcwd() + "/Stores/"
-    # return [f for f in os.listdir(path) if f.endswith('.json')], [load_store_string_data(f) for f in os.listdir(path) if f.endswith('.json')]
-    return [f for f in os.listdir(path) if f.endswith('.json')], [parse_store_data(load_store_data(f)) for f in os.listdir(path) if f.endswith('.json')]
-    
+    path = os.getcwd() + pathFromCurrentWorkingDirectory
+    return [f for f in os.listdir(path) if f.endswith('.json')]
 
 def chat_with_gpt(prompt):
     """Sends a prompt to the ChatGPT API and returns the response."""
@@ -69,79 +65,109 @@ def chat_with_gpt(prompt):
             {"role": "user", "content": prompt}
         ]
     )
-    return response.choices[0].message.content
+    return response.choices[0].message['content']
 
-def getStoreRecommendations(prompt, store_files):
-    """Sends a prompt to the ChatGPT API and returns the stores that have the food closest to what the user wants"""
-    final_prompt = prompt + """
-    . The user has requested this food as one they want to eat.
-
-    This consists of all of the possible restaurants they can order from, with each restaurant name being labeled as "name" alongside the address as "address" 
-    and all food items in "menu".
-
-    Use the provided food that the customer wants, and scan all of the menus. Make sure that a food item that either directly matches, or is mostly the same, is 
-    the food item the customer wants.
-    
-    Please give a list of possible restaurants that the user would want to eat from the restaurants provided.
-    Do NOT under any circumstances make up any new restaurants that do not exist within the file. Also please provide the address and full menu of the restaurant. 
-    """
-    completion = client.chat.completions.create(
+def getStoreRecommendations(food_item, restaurant_data):
+    '''
+    This takes in a food item and filtered restaurant data (data must be filtered with parse_store_data()) and outputs a dictionary
+    of listed stores and potential menu items that match the user input 
+    '''
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            # Edit to get a list of stores based off of what food the customer wants, and the type of food that the stores have.
-            {"role": "system", "content": "You are a helpful assistant. Give a list of the stores that contain food closest to what the user wants."},
-            {"role": "system", "content": "There is a list of restaurants provided in this string:  ```{store_files}```. Please use this to help determine the food the customer wants."},
-            {"role": "user", "content": final_prompt}
-        ]   
+            {"role": "system", "content": "You are a helpful assistant that matches food items to restaurant menus."},
+            {"role": "user", "content": f"Here is the restaurant data: {restaurant_data}. "
+             f"A user wants '{food_item}'. Find restaurants offering similar items and list them as a dictionary string with the key being the restaurant name and the value being a list of similar food items to '{food_item}'. This string must be able to be converted into a dictionary:\n"
+             "ie this format: \'{\"The Buffalo Rose\": [Sandwiches, Burger, Wings, Sliders, Bison Burger, Fried]} if the food_item variable is American food"
+             "This is where to find the aforementioned varibales as they are formatted in the restaurant_data variable: Restaurant name follows after \"name:\" in the string up until the \"address:\" field, List of food items follow after \"menu:[\" and are separated by commas until \"]\" is reached)\n\n"
+             "Keep adding value key pairs to the dictionary string separated by commas if restaurants have some food items that correspond with the users request"
+             f"If nothing is similar in all restaurant_data, return 'No available food items similar to '{food_item}'."}
+        ]
     )
-    print(completion.choices[0].message.content)
+    returnString = response.choices[0].message.content
+    # Tries to convert to a dictionary
+    try: 
+        return json.loads(returnString)
+    # If it doesn't: "No available food items similar to '{food_item}'." In this case a string will be returned that says what is in quotes. 
+    except:
+        return returnString
+    
+# # This function does not have functionality for returning a dictionary
+# def getStoreRecommendations(food_item, restaurant_data):
+#     '''This takes in a food item and filtered restaurant data (data must be filtered with parse_store_data()) and outputs a string
+#     of listed stores and potential menu items that match the user input '''
+#     response = client.chat.completions.create(
+#         model="gpt-3.5-turbo",
+#         messages=[
+#             {"role": "system", "content": "You are a helpful assistant that matches food items to restaurant menus."},
+#             {"role": "user", "content": f"Here is the restaurant data: {restaurant_data}. "
+#              f"A user wants '{food_item}'. Find restaurants offering similar items and list them as:\n"
+#              "1. {Restaurant Name (follows after \"name:\" in the string up until the \"address:\" field)}: {List of similar food items (follow after \"menu:[\" and are separated by commas until \"]\" is reached)}\n\n"
+#              "2. Same thing as 1 but for a new restaurant if applicable"
+#              "Keep listing off restaurants if they have some food items that correspond with the users request"
+#              "If nothing is similar, return 'No available food items similar to {food_item}'."}
+#         ]
+#     )
+#     return response.choices[0].message.content
+
 
 def main():
+    # I am in the working directory of API-tite, but you can change this to whatever you are in
+    global pathFromCurrentWorkingDirectory
+    pathFromCurrentWorkingDirectory = "/backend/Stores/"
+    
     # Load available store files
-    store_files, store_files_data = list_store_files()
-
-    print(store_files_data)
+    store_files = list_store_files()
+    
     # Lists all of the store choices in /Stores for now
     store_choices = "\n".join([f"{i+1}. {store_files[i]}" for i in range(len(store_files))])
-    
-    print(store_files)
-
-    print("Welcome to the ordering system! What type of food are you in the mood for?")
-    store_choices = getStoreRecommendations(input(), store_files_data)
     print(store_choices)
-     
-    # Ask user to select a store
+    
+    # Ask user to select a store file (choose 2 because this contains all the info)
     store_index = int(input(f"Please select a store (1-{len(store_files)}): ")) - 1
     selected_store_file = store_files[store_index]
+    
+    # Load and filter the store data
     store_data = load_store_data(selected_store_file)
+    filtered_store_data = parse_store_data(store_data)
     
-    print(f"You've selected: {store_data['store']['provider_type']}")
+    # Prompt the user for what food type they are ordering and pass it into the chat function along with filtered store data
+    foodType = input("Welcome to the ordering system! What type of food are you in the mood for? \n")
+    store_choices = getStoreRecommendations(foodType, restaurant_data=filtered_store_data)
+    print(f"The type of store choices is of {type(store_choices)}")
+    print(f"The store choices and respective dishes are: {store_choices}")
     
-    # Initialize order variables
-    order = {
-        "store_reference": store_data["reference"],
-        "delivery_address": "",
-        "delivery_phone": "",
-        "dropoff_instructions": "",
-        "items": []
-    }
+    # print(f"You've selected: {store_data['store']['provider_type']}")
     
-    # Ask user for delivery details
-    order['delivery_address'] = input("Enter your delivery address: ")
-    order['delivery_phone'] = input("Enter your delivery phone number: ")
-    order['dropoff_instructions'] = input("Enter any special dropoff instructions: ")
+    # # Initialize order variables
+    # order = {
+    #     "store_reference": store_data["reference"],
+    #     "delivery_address": "",
+    #     "delivery_phone": "",
+    #     "dropoff_instructions": "",
+    #     "items": []
+    # }
+    
+    # # Ask user for delivery details
+    # order['delivery_address'] = input("Enter your delivery address: ")
+    # order['delivery_phone'] = input("Enter your delivery phone number: ")
+    # order['dropoff_instructions'] = input("Enter any special dropoff instructions: ")
 
-    # Generate menu options and let user pick items
-    menu_prompt = f"The menu for {store_data['store']['provider_type']} is: \n"
-    for category in store_data['menu']['categories']:
-        menu_prompt += f"\n{category['name']}:\n"
-        for item in category['items']:
-            menu_prompt += f"- {item['name']}: {item['description']}\n"
+    # # Generate menu options and let user pick items
+    # menu_prompt = f"The menu for {store_data['store']['provider_type']} is: \n"
+    # for category in store_data['menu']['categories']:
+    #     menu_prompt += f"\n{category['name']}:\n"
+    #     for item in category['items']:
+    #         menu_prompt += f"- {item['name']}: {item['description']}\n"
     
-    menu_prompt += "\nPlease specify what you'd like to order (e.g., 'I want a Burrito Scram-Bowl and Cherry bubly')."
+    # menu_prompt += "\nPlease specify what you'd like to order (e.g., 'I want a Burrito Scram-Bowl and Cherry bubly')."
     
-    user_input = input("What would you like to order? ")
-    print(menu_prompt)
+    # user_input = input("What would you like to order? ")
+    # print(menu_prompt)
+    
+    
+    
+    
     # chat_response = chat_with_gpt(menu_prompt + "\n\nUser input: " + user_input)
     
     # print("\nBased on your input, your order is:")
