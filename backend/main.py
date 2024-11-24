@@ -25,14 +25,14 @@ def read_item(q: str):
     openai_response = getStoreRecommendations(q)
     return {"text": "Here is what i could find for you", "store_options": openai_response}
 
-@app.get("/ask")
+@app.get("/send")
 def create(store, place):
-    print(f"received query with q: {q}")
-    openai_response = create_delivery(store, place)
-    return {"text": "Delivery created", "Delivery id": openai_response}
+    print(f"received query with store: {store}, place: {place}")
+    id = create_delivery(store, place)
+    return {"text": "Delivery created", "Delivery_id": id}
 
-@app.get("/ask")
-def update(q: str):
-    print(f"received query with q: {q}")
-    openai_response = get_update(q)
-    return {"text": "Here is what i could find for you", "the status is": openai_response}
+@app.get("/update")
+def update():
+    print(f"request for update received")
+    status = get_update(q)
+    return {"text": "update", "staus": status}
