@@ -105,7 +105,7 @@ export default function CustomAccordion({ storeData }) {
                   marginBottom: '8px',
                 }}
               >
-                <Typography>{item}</Typography>
+                <Typography>{item.name} -- {item.price}</Typography>
                 <Button
                   variant="contained"
                   size="small"
