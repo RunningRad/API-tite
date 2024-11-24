@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from quin import getStoreRecommendations
 from fastapi.middleware.cors import CORSMiddleware
-from test-app import create_delivery
 from delivery_update import get_update
+from test-app import create_delivery
 
 app = FastAPI()
 
