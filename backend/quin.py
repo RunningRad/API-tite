@@ -40,15 +40,15 @@ def parse_ai_return(ai_data, store_data):
     res = []
 
     for return_resturant in ai_data:
-        res.add({'name':return_resturant['name'], 'items':[]})
+        res.append({'name':return_resturant['name'], 'items':[]})
         for resturant in store_data:
             if(resturant['name'] == return_resturant['name']):
                 # got the appropriate resturant
 
 
                 for return_item in return_resturant['items']:
-                    res[-1]['items'].add({'name': '', 'price': 0})
-                    res[-1]['items']['name'] = return_item
+                    res[-1]['items'].append({'name': '', 'price': 0})
+                    res[-1]['items'][-1]['name'] = return_item
                     i = 0
                     for item in resturant['dishes']:
                         i += 1
@@ -61,7 +61,7 @@ def parse_ai_return(ai_data, store_data):
                                 j += 1
                                 if(j == i):
                                     # got the price
-                                    res[-1]['items']['price'] = price
+                                    res[-1]['items'][-1]['price'] = price
                                     break #for price
                             break #for ite
                 break #for resturant
