@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from quin import getStoreRecommendations
-from test_app import create_delivery
-from delivery_update import get_update
+# from test_app import create_delivery
+# from delivery_update import get_update
 
 app = FastAPI()
 
