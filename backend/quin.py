@@ -39,32 +39,28 @@ def parse_store_data(data):
 def parse_ai_return(ai_data, store_data):
     res = []
 
-    for return_resturant in ai_data:
-        res.append({'name':return_resturant['name'], 'items':[]})
-        for resturant in store_data:
-            if(resturant['name'] == return_resturant['name']):
-                # got the appropriate resturant
+    for return_restaurant in ai_data:
+        # Add a new restaurant to the result
+        res.append({'name': return_restaurant['name'], 'items': []})
+        
+        # Find the matching restaurant in store_data
+        for restaurant in store_data:
+            if restaurant['name'] == return_restaurant['name']:
+                # Iterate over items returned by the AI
+                for return_item in return_restaurant['items']:
+                    # Initialize item data
+                    item_data = {'name': return_item, 'price': 0}
 
+                    # Find the item in the restaurant's dishes
+                    if return_item in restaurant['dishes']:
+                        # Get the index of the item
+                        index = restaurant['dishes'].index(return_item)
+                        # Fetch the price using the same index
+                        item_data['price'] = restaurant['prices'][index]
 
-                for return_item in return_resturant['items']:
-                    res[-1]['items'].append({'name': '', 'price': 0})
-                    res[-1]['items'][-1]['name'] = return_item
-                    i = 0
-                    for item in resturant['dishes']:
-                        i += 1
-                        if (item == return_item):
-                            # got the appropriate item
-
-
-                            j = 0
-                            for price in resturant['prices']:
-                                j += 1
-                                if(j == i):
-                                    # got the price
-                                    res[-1]['items'][-1]['price'] = price
-                                    break #for price
-                            break #for ite
-                break #for resturant
+                    # Add the item to the restaurant's items
+                    res[-1]['items'].append(item_data)
+                break  # Restaurant match found, no need to continue
     return res
 
 # def load_store_string_data(file_path):
@@ -127,11 +123,11 @@ def getStoreRecommendations(food_item):
     returnString = response.choices[0].message.content
 
     # Tries to convert to a dictionary
-    try: 
-        return json.loads(returnString)
-    # If it doesn't: "No available food items similar to '{food_item}'." In this case a string will be returned that says what is in quotes. 
-    except:
-        return returnString
+    
+    ai_return = json.loads(returnString)
+    return parse_ai_return(ai_return, store_data)
+    #return parse_ai_return(ai_return, store_data)
+    # If it doesn't: "No available food items similar to '{food_item}'." In this case a string will be returned that says what is in quotes.
     
 # # This function does not have functionality for returning a dictionary
 # def getStoreRecommendations(food_item, restaurant_data):

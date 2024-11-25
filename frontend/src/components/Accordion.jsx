@@ -52,6 +52,7 @@ export default function CustomAccordion({ storeData }) {
   const [expanded, setExpanded] = React.useState('panel1');
   const [selectedStore, setSelectedStore] = React.useState(null);
   const [order, setOrder] = React.useState([]);
+  const [statusMessage, setStatusMessage] = React.useState('');
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -67,6 +68,40 @@ export default function CustomAccordion({ storeData }) {
 
   const handleAddToOrder = (item) => {
     setOrder((prevOrder) => [...prevOrder, item]);
+  };
+
+  const handlePlaceOrder = async () => {
+    if (!selectedStore || order.length === 0) {
+      alert("Please select a store and add items to your order before placing it.");
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:8000/send?store=${selectedStore.name}&place=YourDropoffLocation`, {
+        method: 'GET',
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setStatusMessage(`Order placed successfully! Delivery ID: ${data.Delivery_id}`);
+      } else {
+      }
+    } catch (error) {
+      console.error("Error placing order:", error);
+    }
+  };
+
+  const handleGetDeliveryUpdates = async () => {
+    try {
+      const response = await fetch(`http://localhost:8000/update`, {
+        method: 'GET',
+      });
+      const data = await response.json();
+      if (response.ok) {
+      } else {
+      }
+    } catch (error) {
+      console.error("Error getting delivery updates:", error);
+    }
   };
 
   return (
@@ -105,7 +140,7 @@ export default function CustomAccordion({ storeData }) {
                   marginBottom: '8px',
                 }}
               >
-                <Typography>{item.name} -- {item.price}</Typography>
+                <Typography>{item.name} - ${item.price}</Typography>
                 <Button
                   variant="contained"
                   size="small"
@@ -138,12 +173,23 @@ export default function CustomAccordion({ storeData }) {
             <List>
               {order.map((item, idx) => (
                 <ListItem key={idx} style={{ paddingLeft: 0 }}>
-                  <ListItemText primary={item} />
+                  <ListItemText primary={`${item.name} - $${item.price}`} />
                 </ListItem>
               ))}
             </List>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handlePlaceOrder}
+              style={{ marginRight: '10px' }}
+            >
+              Place Order
+            </Button>
           </CardContent>
         </Card>
+      )}
+      {statusMessage && (
+        <Typography style={{ marginTop: '20px', color: 'green' }}>{statusMessage}</Typography>
       )}
     </div>
   );
