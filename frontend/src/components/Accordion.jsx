@@ -11,6 +11,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -53,6 +55,7 @@ export default function CustomAccordion({ storeData }) {
   const [selectedStore, setSelectedStore] = React.useState(null);
   const [order, setOrder] = React.useState([]);
   const [statusMessage, setStatusMessage] = React.useState('');
+  const [address, setAddress] = React.useState('');
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -70,37 +73,39 @@ export default function CustomAccordion({ storeData }) {
     setOrder((prevOrder) => [...prevOrder, item]);
   };
 
+  const calculateTotalValue = () => {
+    return order.reduce((total, item) => total + item.price, 0).toFixed(2);
+  };
+
   const handlePlaceOrder = async () => {
-    if (!selectedStore || order.length === 0) {
-      alert("Please select a store and add items to your order before placing it.");
+    if (!selectedStore || !address || order.length === 0) {
+      alert('Please complete all fields and add items to your order before placing it.');
       return;
     }
 
     try {
-      const response = await fetch(`http://localhost:8000/send?store=${selectedStore.name}&place=YourDropoffLocation`, {
+      const totalValue = calculateTotalValue();
+      const response = await fetch('http://localhost:8000/create-delivery', {
         method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          storeName: selectedStore.name,
+          address: address,
+          orderValue: parseFloat(totalValue),
+        }),
       });
-      const data = await response.json();
-      if (response.ok) {
-        setStatusMessage(`Order placed successfully! Delivery ID: ${data.Delivery_id}`);
-      } else {
-      }
-    } catch (error) {
-      console.error("Error placing order:", error);
-    }
-  };
 
-  const handleGetDeliveryUpdates = async () => {
-    try {
-      const response = await fetch(`http://localhost:8000/update`, {
-        method: 'GET',
-      });
       const data = await response.json();
       if (response.ok) {
+        setStatusMessage(`Order placed successfully! Delivery ID: ${data.deliveryId}`);
       } else {
+        setStatusMessage(`Error placing order: ${data.message}`);
       }
     } catch (error) {
-      console.error("Error getting delivery updates:", error);
+      console.error('Error placing order:', error);
+      setStatusMessage('Failed to place order. Please try again later.');
     }
   };
 
@@ -148,7 +153,7 @@ export default function CustomAccordion({ storeData }) {
                     if (selectedStore && selectedStore.name === store.name) {
                       handleAddToOrder(item);
                     } else {
-                      alert("You can only add items from the selected store.");
+                      alert('You can only add items from the selected store.');
                     }
                   }}
                 >
@@ -164,6 +169,16 @@ export default function CustomAccordion({ storeData }) {
           <Typography variant="h6">Selected Store: {selectedStore.name}</Typography>
         </div>
       )}
+      <Box style={{ marginTop: '20px' }}>
+        <TextField
+          label="Your Address"
+          fullWidth
+          variant="outlined"
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+          style={{ marginBottom: '10px' }}
+        />
+      </Box>
       {order.length > 0 && (
         <Card style={{ marginTop: '20px', padding: '16px', backgroundColor: '#f9f9f9' }}>
           <CardContent>
@@ -177,6 +192,9 @@ export default function CustomAccordion({ storeData }) {
                 </ListItem>
               ))}
             </List>
+            <Typography variant="h6" style={{ marginTop: '16px' }}>
+              Total: ${calculateTotalValue()}
+            </Typography>
             <Button
               variant="contained"
               color="primary"
@@ -189,7 +207,9 @@ export default function CustomAccordion({ storeData }) {
         </Card>
       )}
       {statusMessage && (
-        <Typography style={{ marginTop: '20px', color: 'green' }}>{statusMessage}</Typography>
+        <Typography style={{ marginTop: '20px', color: statusMessage.includes('successfully') ? 'green' : 'red' }}>
+          {statusMessage}
+        </Typography>
       )}
     </div>
   );
